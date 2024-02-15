@@ -1,0 +1,18 @@
+.headerBottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top:24px ;
+    padding-bottom:15px ;
+    width: 638px;
+}
+.headerBottomButton{
+    background-color: transparent;
+    border: transparent;
+    font-family: 'Clear Sans';
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}

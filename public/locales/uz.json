@@ -1,0 +1,16 @@
+{
+    "Home" : {
+        "Header" :{
+            "0" : "O'zbekistonning istalgan shahriga yetkazib berish!",
+             "1": "Qayta qo'ng'iroq",
+             "2": "Katalog",
+             "3" : "Biz haqimizda",
+             "4" : "Hamkorlik shartlari",
+             "5" : "Maqolalar",
+             "6" : "Kontaktlar"
+        }
+    },
+    "Contact" : {
+        "0" : "Salom 2"
+    }
+}

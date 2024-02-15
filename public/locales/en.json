@@ -1,0 +1,16 @@
+{
+    "Home" : {
+        "Header" : {
+            "0" : "Delivery to any city in Uzbekistan!",
+             "1" : "Callback",
+             "2": "Directory",
+             "3" : "About us",
+             "4" : "Terms of cooperation",
+             "5" : "Articles",
+             "6" : "Contacts"
+        }
+    },
+    "Contact" : {
+        "0" : "Hello 2"
+    }
+}
