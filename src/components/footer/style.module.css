@@ -1,0 +1,45 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.headerTopPhone{
+    font-family: 'Clear Sans';
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.headerTopLocation{
+    font-family: 'Clear Sans';
+    font-weight: 500;
+    color: white;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    width: 350px;
+}
+.footerLeftBottom{
+    font-family: 'Clear Sans';
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 1);
+}
+.Company h3{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-top: 1px solid gray;
+    padding-top: 15px;
+}
+.Network{
+    padding: 7px;
+}
+@media only screen and (max-width:900px) {
+.footer{
+    flex-direction: column;
+}
+}

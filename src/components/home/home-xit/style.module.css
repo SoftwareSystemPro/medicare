@@ -1,0 +1,45 @@
+.xit{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.xit_card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.xit_card h3{
+    position: absolute;
+    top: 80px;
+    z-index: 1000;
+    font-family: 'Clear Sans';
+    font-size: 39px;
+    color: white;
+    font-weight: 700;
+}
+@media only screen and (max-width:900px) {
+.xit{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+@media only screen and (max-width:694px) {
+    .xit_card{
+        width: 49%;
+    }
+   .xit_card img{
+    width: 100%;
+    height: 332px;
+   } 
+   .xit_card h3{
+    position: absolute;
+    margin: 0;
+    top: 40px;
+    font-size: 32px;
+    z-index: 1000;
+    font-family: 'Clear Sans';
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+}

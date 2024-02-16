@@ -60,20 +60,27 @@ const navItems = [
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-
+  const handleDrawerClose = () => {
+    setMobileOpen(false);
+  };
   const drawer = (
     <Box  sx={{ textAlign: 'center' }}>
       <Box sx={{display:'flex' , justifyContent:'space-between' ,alignItems:'center' ,paddingX:'20px'}}>
-      <Box sx={{display:'flex' , alignItems:'center'}}>
+      <Box onClick={() => router.push(`/${locale}`)} sx={{display:'flex' , alignItems:'center'}}>
         <Image src={Logo} alt='Logo Image'/>
       </Box>
+      <Box onClick={() => setMobileOpen(false)}>
       <CloseIcon/>
+      </Box>
       </Box>
       <Divider />
       <List sx={{ padding:'10px'}}>
-      <DropDown/>
-        {navItems.map((item) => (
-          <ListItem key={item.route}  onClick={() => router.push(`${locale}/${item.route}`)} disablePadding>
+      <DropDown handleDrawerClose={handleDrawerClose}/>
+        {navItems.map((item , index) => (
+          <ListItem key={index}  onClick={() => { 
+            setMobileOpen(false)
+            router.push(`${locale}/${item.route}`)
+          }} disablePadding>
             <ListItemButton sx={{ textAlign: 'start' , borderBottom:'1px solid gray'  }}>
               <ListItemText primary={item.label} />
             </ListItemButton>
@@ -99,6 +106,7 @@ const navItems = [
             href={{ pathname, query }}
             as={asPath}
             locale={otherLocale}
+            onClick={() =>  setMobileOpen(false)}
           >
             <span className={ otherLocale === locale ? styles.activeLocaleLink : styles.localeLink}>{otherLocale}</span>
           </Link>
@@ -111,7 +119,7 @@ const navItems = [
 
   return (
     <>
-          <Box  sx={{ display: 'flex' }}>
+          <Box  sx={{ display: 'flex' ,   height:{xs:'10vh' , md:'20vh'} }}>
       <CssBaseline />
       
       <AppBar sx={{ backgroundColor:'white'}} component="nav">
@@ -125,7 +133,7 @@ const navItems = [
             component="div"
             sx={{ flexGrow: 1, display: 'block' }}
           >
-      <Box sx={{display:'flex' , alignItems:'center'}}>
+      <Box onClick={() => router.push(`/${locale}`)} sx={{display:'flex' , alignItems:'center'}}>
         <Image src={Logo} alt='Logo Image'/>
       </Box>
           </Typography>

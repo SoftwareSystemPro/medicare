@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images : {
+    domains: ['www.medischevakhandel.nl']
+  },
   i18n : {
     locales:['ru' , 'uz' , 'en'],
     defaultLocale:'ru'

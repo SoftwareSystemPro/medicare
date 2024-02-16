@@ -8,12 +8,15 @@ import { HeaderBottomProps } from "./headerbottom.props";
 const HeaderBottom = ({ navItems }: HeaderBottomProps) => {
   const router = useRouter();
   const { locale } = router;
+  const handleDrawerClose = () => {
+    console.log("Drawer closed"); 
+  };
   return (
     <div className={styles.headerBottom}>
-      <DropDown />
-      {navItems.map((item) => (
+      <DropDown handleDrawerClose={handleDrawerClose}/>
+      {navItems.map((item , index) => (
         <button
-          key={item.route}
+          key={index}
           className={styles.headerBottomButton}
           onClick={() => router.push(`${locale}/${item.route}`)}
         >

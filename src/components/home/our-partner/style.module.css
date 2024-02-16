@@ -1,0 +1,38 @@
+.section_our_partner{
+    text-align: center;
+    position: relative;
+    bottom: 95px;
+}
+.our_partners h2{
+    color: rgba(11, 63, 100, 1);
+    font-weight: 700;
+    font-size: 39px;
+}
+.our_partners{
+    padding: 0 20px;
+    padding-bottom: 50px;
+    background-color: white;
+    border-radius: 3px;
+}
+@media only screen and (max-width:900px) {
+    .section_our_partner{
+        bottom: 0px;
+    }
+    .our_partners h2{
+        margin: 0;
+        padding-top: 20px;
+        
+    }
+}
+@media only screen and (max-width:570px) {
+    .our_partners h2{
+        font-size: 29px;
+    }
+    .our_partners{
+        padding: 0 20px;
+        padding-bottom: 0px;
+        background-color: white;
+        border-radius: 3px;
+    }
+
+}
