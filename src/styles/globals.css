@@ -19,8 +19,10 @@ body {
 .slick-prev{
   display: none !important;
 }
-.slick-dots{
-  display: none !important;
+.slick-dots li button:before{
+  font-size: 26px !important;
+  color: #0B3F64 !important;
+  padding-top: 30px;
 }
 .css-1c35hjw-MuiPaper-root-MuiAccordion-root.Mui-expanded{
   margin: 0 !important;

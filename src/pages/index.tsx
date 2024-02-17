@@ -10,6 +10,7 @@ import CardCommon from 'src/components/common/card/cardCommon'
 import HomeXit from 'src/components/home/home-xit/homeXit'
 import Ask from 'src/components/home/ask/Ask'
 import FaqComponent from 'src/components/home/faq/Faq'
+import BlogHome from 'src/components/home/blog/blogHome'
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <HomeXit/>
         <Ask/>
         <FaqComponent/>
+        <BlogHome/>
       </Layout>
   )
 }
