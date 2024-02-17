@@ -8,6 +8,8 @@ import AboutVideo from 'src/components/home/about-video/aboutVideo'
 import OurAdvantages from 'src/components/home/our-advantag/ourAdvantages'
 import CardCommon from 'src/components/common/card/cardCommon'
 import HomeXit from 'src/components/home/home-xit/homeXit'
+import Ask from 'src/components/home/ask/Ask'
+import FaqComponent from 'src/components/home/faq/Faq'
 
 const Home = () => {
   return (
@@ -17,7 +19,8 @@ const Home = () => {
         <AboutVideo/>
         <OurAdvantages/>
         <HomeXit/>
-
+        <Ask/>
+        <FaqComponent/>
       </Layout>
   )
 }

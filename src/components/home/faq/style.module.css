@@ -1,0 +1,49 @@
+.faq{
+    background-color: white;
+    width: 100%;
+    padding: 40px;
+}
+.accardion{
+    display: flex;
+    flex-wrap: wrap;
+}
+.accardion_nav{
+    width: 49%;
+}
+.faq h2{
+    text-align: center;
+    color: #0B3F64;
+    font-family: 'Clear Sans';
+    font-size: 39px;
+    font-weight: 700;
+}
+.faq span{
+    font-family: 'Clear Sans';
+    font-weight: 700;
+
+}
+@media only screen and (max-width:900px) {
+    .accardion{
+        flex-direction: column;
+    }
+    .faq{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .accardion_nav{
+        width: 100%;
+    }
+    .faq{
+
+        padding: 20px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .faq h2{
+        text-align: center;
+        color: #0B3F64;
+        font-family: 'Clear Sans';
+        font-size: 29px;
+        font-weight: 700;
+    }
+}

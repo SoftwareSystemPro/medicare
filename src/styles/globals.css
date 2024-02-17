@@ -22,6 +22,12 @@ body {
 .slick-dots{
   display: none !important;
 }
+.css-1c35hjw-MuiPaper-root-MuiAccordion-root.Mui-expanded{
+  margin: 0 !important;
+}
+.css-1c35hjw-MuiPaper-root-MuiAccordion-root{
+  box-shadow: none !important;
+}
 @media only screen and (max-width:1340px) {
   .container{
     width: 100%;
