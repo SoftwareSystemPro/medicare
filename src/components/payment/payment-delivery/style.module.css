@@ -1,0 +1,31 @@
+.payment_delivery{
+    background-color: white;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.payment_delivery h3{
+    display: flex;
+    align-items: center;
+    font-family: 'Clear Sans';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 23px;
+}
+.payment_delivery_box_top_image{
+    margin-right: 10px;
+}
+.payment_delivery_cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment_delivery_card{
+    width: 49%;
+    box-shadow: 0px 2px 4px 0px rgba(0, 24, 112, 0.21);
+    padding: 30px 50px;
+}
+
+.payment_delivery_card p{
+    white-space : pre-wrap
+}
