@@ -1,0 +1,19 @@
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.similar h2{
+    text-align: center;
+    font-family: 'Clear Sans';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    color: rgba(11, 63, 100, 1);
+}
+@media only screen and (max-width:900px) {
+    .cards{
+    width: 95%;
+    }
+}

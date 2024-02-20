@@ -32,7 +32,7 @@
 }
 .Card_imgs img{
     width: 100%;
-    height: 221px; 
+    height: 201px; 
 }
 .card_buttons{
     display: flex;
@@ -87,11 +87,23 @@
     padding-top: 6px;
 }
 .card_buttons{
-    flex-direction: column;
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: space-between;
 }
-.card_buttons button{
+.card_buttons button:nth-child(1){
     width: 100%;
-    padding: 5px 10px;
+    padding: 2px 2px;
     margin-bottom: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+.card_buttons button:nth-child(2){
+    width: 100%;
+    padding: 2px 2px;
+    margin-bottom: 6px;
+    font-size: 11px;
+    font-weight: 500;
 }
 }

@@ -1,0 +1,46 @@
+.catalog{
+    display: flex;
+    justify-content: space-between;
+}
+.top_catalog{
+    padding: 0 20px;
+    display: none;
+    align-items: center;
+}
+.top_catalog span {
+    font-family: 'Clear Sans';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20.5px;
+    margin-right: 10px;
+}
+.top_catalog select{
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+}
+.CatalogSection h2{
+    text-align: center;
+    font-family: 'Clear Sans';
+    font-size: 39px;
+    line-height: 41px;
+    color: rgba(11, 63, 100, 1);
+}
+.CatalogSection {
+    margin-top: 60px;
+}
+
+
+@media only screen and (max-width:900px) {
+    .top_catalog{
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:600px) {
+    .CatalogSection h2{
+        font-size: 29px;
+    }
+}

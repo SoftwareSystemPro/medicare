@@ -1,0 +1,113 @@
+.contact{
+    width: 100%;
+    background: linear-gradient(270deg, rgba(11, 63, 100, 0.35) 0%, #0B3F64 100%);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.form_wrapper{
+    width: 50%;    
+    padding-bottom: 40px;
+}
+.form_wrapper h2{
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Clear Sans';
+    font-size: 39px;
+    color: white;
+}
+.form_wrapper p{
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Clear Sans';
+    font-size: 21px;
+    color: white;
+}
+.contact iframe{
+    width: 50%;
+}
+.form{
+    background-color: rgba(255, 255, 255, 0.18);
+    padding: 30px 35px;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form input{
+    border: none;
+    background-color: transparent;
+    padding: 11px;
+}
+.form button{
+    font-family: 'Clear Sans';
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    padding: 11px 30px;
+    border: 3px solid #E23136;
+    background-color: #E23136;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.form button:hover{
+    border: 3px solid #E23136;
+    background-color: transparent;
+}
+.form_label{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+}
+.form input::placeholder{
+    font-family: 'Clear Sans';
+    font-size: 18px;
+    font-weight: 300;    
+    color: #ffffff90;
+}
+@media only screen and (max-width: 900px) {
+    .contact{
+        width: 90%;
+        margin: 0 auto;
+        background: linear-gradient(270deg, rgba(11, 63, 100, 0.35) 0%, #0B3F64 100%);
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .contact iframe{
+        width: 100%;
+        height: 300px;
+    }
+    .form_wrapper{
+        width: 80%;
+        margin: 0 auto;    
+        padding-bottom: 40px;
+    }
+    .form{
+        padding: 20px 25px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .form_wrapper h2{
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Clear Sans';
+        font-size: 24px;
+        color: white;
+    }
+    
+    .form_wrapper p{
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Clear Sans';
+        font-size: 15px;
+        color: white;
+    }
+}

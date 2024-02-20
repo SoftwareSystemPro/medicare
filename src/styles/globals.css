@@ -30,6 +30,7 @@ body {
 .css-1c35hjw-MuiPaper-root-MuiAccordion-root{
   box-shadow: none !important;
 }
+
 @media only screen and (max-width:1340px) {
   .container{
     width: 100%;

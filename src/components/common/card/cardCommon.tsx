@@ -7,7 +7,7 @@ const CardCommon = ({cardData} : CardProps) => {
   return (  
     <div className={styles.Card} key={cardData.id}>
         <div className={styles.Card_imgs}>
-            <Image src={cardData.image} width={324} height={221} alt='card Image'/>
+            <Image src={cardData.image} width={324} height={201} alt='card Image'/>
             <span>{cardData.category}</span>
         </div>
         <h4>{cardData.title.slice(0 ,40)}...</h4>

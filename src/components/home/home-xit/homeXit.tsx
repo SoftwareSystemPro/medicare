@@ -14,7 +14,7 @@ const HomeXit = () => {
           <Image src={XitBackground} width={324} height={411}  style={{objectFit:'cover'}} alt='xit Image'/>
           <h3>{t("Xit.0")}</h3>
           </div>
-        {DataCard.map((elem) => 
+        {DataCard.slice(0  , 7).map((elem) => 
         <CardCommon cardData={elem}/>
         )}
         </div>

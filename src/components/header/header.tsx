@@ -119,7 +119,7 @@ const navItems = [
 
   return (
     <>
-          <Box  sx={{ display: 'flex' ,   height:{xs:'10vh' , md:'20vh'} }}>
+          <Box  sx={{ display: 'flex' }}>
       <CssBaseline />
       
       <AppBar sx={{ backgroundColor:'white'}} component="nav">
