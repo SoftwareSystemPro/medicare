@@ -5,9 +5,9 @@ import CardCommon from 'src/components/common/card/cardCommon'
 const CatalogProducts = () => {
   return (
     <div className={styles.catalogProduct}>
-                {DataCard.map((elem  ,index) => 
+                {/* {DataCard.map((elem  ,index) => 
         <CardCommon key={index} cardData={elem}/>
-        )}
+        )} */}
     </div>
   )
 }

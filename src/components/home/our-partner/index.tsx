@@ -6,7 +6,12 @@ import Our3 from "../../../../public/home/our-3.svg"
 import Our4 from "../../../../public/home/our-4.svg"
 import Slider from "react-slick"
 import Image from 'next/image'
+import { useQuery } from '@apollo/client'
+import { GET_PARTNERS } from 'src/services/partners.query'
+import { Partners } from 'src/interface/partner.type'
 const OurPartner = () => {
+
+  const {loading , error , data} = useQuery(GET_PARTNERS)
   var settings = {
     dots: false,
     infinite: true,
@@ -47,30 +52,11 @@ const OurPartner = () => {
         <div className={styles.our_partners}>
           <h2>Наши партнеры</h2>
           <Slider {...settings}>
-        <div>
-          <Image src={Our1} alt='our partner'/>
-        </div>
-        <div>
-          <Image src={Our4} alt='our partner'/>
-        </div>
-        <div>
-          <Image src={Our3} alt='our partner'/>
-        </div>
-        <div>
-          <Image src={Our4} alt='our partner'/>
-        </div>
-        <div>
-          <Image src={Our3} alt='our partner'/>
-        </div>
-        <div>
-          <Image src={Our2} alt='our partner'/>
-        </div>
-        <div>
-          <Image src={Our1} alt='our partner'/>
-        </div>
-        <div>
-          <Image src={Our4} alt='our partner'/>
-        </div>
+            {data?.partners_image?.map((elem:Partners , index:number) => 
+                    <div key={index} className={styles.card}>
+                    <Image src={elem.image.url} width={200} height={150} alt='our partner'/>
+                  </div>
+            )}
       </Slider>
         </div>
 

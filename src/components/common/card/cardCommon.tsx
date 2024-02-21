@@ -11,12 +11,12 @@ const CardCommon = ({cardData} : CardProps) => {
       router.push(`/product/salom`)
     }
   return (  
-    <div className={styles.Card} key={cardData.id}>
+    <div className={styles.Card} key={cardData.slug}>
         <div className={styles.Card_imgs}>
-            <Image src={cardData.image} width={324} height={201} alt='card Image'/>
-            <span>{cardData.category}</span>
+            <Image src={cardData.image1?.url} width={324} height={201} alt='card Image'/>
+            <span>{cardData.category.categoryRu}</span>
         </div>
-        <h4>{locale == 'ru' ? cardData.title_ru.slice(0 ,40) : locale == 'uz' ? cardData.title_uz.slice(0 ,40)  :locale == 'en' ? cardData.title_en.slice(0 ,40)  : null}...</h4>
+        <h4>{locale == 'ru' ? cardData.titleRu.slice(0 ,40) : locale == 'uz' ? cardData.titleUz.slice(0 ,40)  :locale == 'en' ? cardData.titleEn.slice(0 ,40)  : null}...</h4>
         <div className={styles.card_buttons}>
             <button onClick={HandleRouter}>{t('Card.0')}</button>
             <button>{t('Card.1')}</button>

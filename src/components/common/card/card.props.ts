@@ -1,5 +1,5 @@
-import { CardType } from "src/interface/card.type";
+import { CardProductType } from "src/interface/card.type";
 
 export interface CardProps {
-    cardData : CardType
+    cardData : CardProductType
 }

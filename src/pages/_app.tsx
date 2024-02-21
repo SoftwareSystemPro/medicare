@@ -3,6 +3,16 @@ import type { AppProps } from 'next/app'
 import { NextIntlClientProvider } from 'next-intl'
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+
+const graphAPI = process.env.NEXT_PUBLIC_HYGRAPH_ENDPOINT as string
+
+const client = new ApolloClient({
+  uri: graphAPI,
+  cache: new InMemoryCache(),
+});
+
+
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const { locale } = router;
@@ -22,7 +32,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       />
     </Head>
     <NextIntlClientProvider messages={pageProps.messages} locale={locale}>
-  <Component {...pageProps} />
+    <ApolloProvider client={client}>
+    <Component {...pageProps} />
+    </ApolloProvider>
     </NextIntlClientProvider>
     </>
 

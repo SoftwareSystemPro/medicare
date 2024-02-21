@@ -1,8 +1,15 @@
-export interface CardType {
-    id :number,
-    image : string,
-    title_ru:string,
-    title_en:string,
-    title_uz:string,
-    category :string,
+export interface CardProductType {
+    slug : string ,
+    image1 : {
+        url : string
+    },
+    titleEn : string,
+    titleRu : string,
+    titleUz : string,
+    category : {
+        categoryEn : string
+        categoryRu : string
+        categorySlug : string
+        categoryUz : string
+      }
 }

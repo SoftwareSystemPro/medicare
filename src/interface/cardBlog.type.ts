@@ -1,5 +1,9 @@
 export interface CardBlog {
-    id : number ,
-    image : string,
-    title : string
+    slug : string ,
+    image : {
+        url : string
+    },
+    titleEn : string,
+    titleRu : string,
+    titleUz : string,
 }

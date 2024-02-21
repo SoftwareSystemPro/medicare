@@ -5,6 +5,7 @@
 }
 .Card_imgs{
     width: 324px;
+    height: 50%;
     position:relative;
 }
 .Card_imgs span{
@@ -29,6 +30,7 @@
     margin-left: 14px;
     margin-right: 14px;
     padding-top: 16px;
+    text-transform: uppercase;
 }
 .Card_imgs img{
     width: 100%;
