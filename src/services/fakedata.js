@@ -3,73 +3,97 @@ export const DataCard = [
         id :1 , 
         image : 'https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg',
         category : 'хит',
-        title : 'Перчатки нестерильные Unigloves',
+        title_ru : 'Перчатки нестерильные Unigloves',
+        title_en : 'en Title',
+        title_uz : 'uz Title'
     },
     {
         id :2 , 
         image : 'https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg',
         category : 'хит',
-        title : 'Перчатки нестерильные Unigloves',
+        title_ru : 'Перчатки нестерильные Unigloves',
+        title_en : 'en Title',
+        title_uz : 'uz Title'
     },
     {
         id :3, 
         image : 'https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg',
         category : 'хит',
-        title : 'Перчатки нестерильные Unigloves',
+        title_ru : 'Перчатки нестерильные Unigloves',
+        title_en : 'en Title',
+        title_uz : 'uz Title'
     },
     {
         id :4, 
         image : 'https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg',
         category : 'хит',
-        title : 'Перчатки нестерильные Unigloves',
+        title_ru : 'Перчатки нестерильные Unigloves',
+        title_en : 'en Title',
+        title_uz : 'uz Title'
     },
     {
         id :5, 
         image : 'https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg',
         category : 'хит',
-        title : 'Перчатки нестерильные Unigloves',
+        title_ru : 'Перчатки нестерильные Unigloves',
+        title_en : 'en Title',
+        title_uz : 'uz Title'
     },
     {
         id :6, 
         image : 'https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg',
         category : 'хит',
-        title : 'Перчатки нестерильные Unigloves',
+        title_ru : 'Перчатки нестерильные Unigloves',
+        title_en : 'en Title',
+        title_uz : 'uz Title'
     },
     {
         id :6, 
         image : 'https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg',
         category : 'хит',
-        title : 'Перчатки нестерильные Unigloves',
+        title_ru : 'Перчатки нестерильные Unigloves',
+        title_en : 'en Title',
+        title_uz : 'uz Title'
     },
     {
         id :6, 
         image : 'https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg',
         category : 'хит',
-        title : 'Перчатки нестерильные Unigloves',
+        title_ru : 'Перчатки нестерильные Unigloves',
+        title_en : 'en Title',
+        title_uz : 'uz Title'
     },
     {
         id :6, 
         image : 'https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg',
         category : 'хит',
-        title : 'Перчатки нестерильные Unigloves',
+        title_ru : 'Перчатки нестерильные Unigloves',
+        title_en : 'en Title',
+        title_uz : 'uz Title'
     },
     {
         id :6, 
         image : 'https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg',
         category : 'хит',
-        title : 'Перчатки нестерильные Unigloves',
+        title_ru : 'Перчатки нестерильные Unigloves',
+        title_en : 'en Title',
+        title_uz : 'uz Title'
     },
     {
         id :6, 
         image : 'https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg',
         category : 'хит',
-        title : 'Перчатки нестерильные Unigloves',
+        title_ru : 'Перчатки нестерильные Unigloves',
+        title_en : 'en Title',
+        title_uz : 'uz Title'
     },
     {
         id :6, 
         image : 'https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg',
         category : 'хит',
-        title : 'Перчатки нестерильные Unigloves',
+        title_ru : 'Перчатки нестерильные Unigloves',
+        title_en : 'en Title',
+        title_uz : 'uz Title'
     }
 ]
 

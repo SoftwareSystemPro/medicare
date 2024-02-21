@@ -1,26 +1,27 @@
-import { GetStaticPropsContext, GetStaticPaths } from 'next';
+import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import React from 'react';
-import CatalogComponent from 'src/components/catalog';
+import BlogComponent from 'src/components/blog/blog';
 import Contact from 'src/components/contact/Contact';
 import Layout from 'src/layout/layout';
 
-const Catalog = () => {
+const Blog = () => {
   return (
     <Layout>
-      <CatalogComponent />
-      <Contact />
+      <div className='container'>
+        <BlogComponent/>
+        <Contact/>
+      </div>
     </Layout>
   );
 };
 
-export default Catalog;
+export default Blog;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-
-  const catalogs = ['catalog1', 'catalog2']; 
+  const blogs = ['salom', 'blog2']; // Assuming "salom" and "blog2" are the blog IDs
   
-  const paths = catalogs.map((catalog) => ({
-    params: { catalog },
+  const paths = blogs.map((blog) => ({
+    params: { blog }, 
   }));
 
   return {

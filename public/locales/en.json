@@ -16,5 +16,9 @@
     },
     "Contact" : {
         "0" : "Hello 2"
-    }
+    },
+    "Card": {
+        "0": "More details",
+        "1": "Add to cart"
+      }
 }

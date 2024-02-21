@@ -18,7 +18,7 @@ const HeaderBottom = ({ navItems }: HeaderBottomProps) => {
         <button
           key={index}
           className={styles.headerBottomButton}
-          onClick={() => router.push(`${locale}/${item.route}`)}
+          onClick={() => router.push(item.route)}
         >
           {item.label}
         </button>

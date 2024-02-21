@@ -1,3 +1,4 @@
+import { GetStaticPropsContext } from "next"
 import CatalogFilter from "./catalogFilter/catalogFilter"
 import CatalogProducts from "./catalogProducts/catalogProducts"
 import styles from "./style.module.css"

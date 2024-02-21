@@ -37,24 +37,25 @@ export default function Navbar(props: Props) {
   const t = useTranslations('Home');
   const router = useRouter();
   const { locales, locale, pathname, query, asPath } = router;
+  
   const otherLocales = locales || [];
 const navItems = [
   {
-      route: '/category',
+      route: '/about',
       label :t('Header.3')
   },
   {
-      route: '/blog',
+      route: '/payment',
       label :t('Header.4')
   },
   {
-      route: '/contact',
+      route: '/blogs',
       label :t('Header.5')
   },
   {
     route: '/contact',
     label :t('Header.6')
-}
+  }
 ]
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const handleDrawerToggle = () => {
@@ -77,12 +78,12 @@ const navItems = [
       <List sx={{ padding:'10px'}}>
       <DropDown handleDrawerClose={handleDrawerClose}/>
         {navItems.map((item , index) => (
-          <ListItem key={index}  onClick={() => { 
+          <ListItem key={index} sx={{cursor :'pointer' }} onClick={() => { 
             setMobileOpen(false)
-            router.push(`${locale}/${item.route}`)
+            router.push(`/${locale}/${item.route}`)
           }} disablePadding>
-            <ListItemButton sx={{ textAlign: 'start' , borderBottom:'1px solid gray'  }}>
-              <ListItemText primary={item.label} />
+            <ListItemButton sx={{ textAlign: 'start' , borderBottom:'1px solid gray' , cursor :'pointer' }}>
+              <ListItemText primary={item.label} sx={{cursor :'pointer'}} />
             </ListItemButton>
           </ListItem>
         ))}
