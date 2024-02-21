@@ -1,5 +1,4 @@
 export interface CardProductType {
-    slug : string ,
     image1 : {
         url : string
     },
@@ -12,4 +11,5 @@ export interface CardProductType {
         categorySlug : string
         categoryUz : string
       }
+      slug: string
 }

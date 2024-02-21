@@ -7,7 +7,14 @@ import Content from "src/components/product/Content/Content";
 import Description from "src/components/product/Description/Description";
 import Similar from "src/components/product/similar/Similar"
 import Contact from "src/components/contact/Contact";
+import { useQuery } from "@apollo/client";
+import { GET_PRODUCTMORE } from "src/services/productMore.query";
+import { useRouter } from "next/router";
 const Product = () => {
+  const {query} = useRouter();
+  const {loading , error , data} = useQuery(GET_PRODUCTMORE , {
+    variables : {slug : query.slug}
+  })
   return (
     <Layout>
       <div className={styles.section_product}>
@@ -15,15 +22,15 @@ const Product = () => {
           <div className={styles.product_box}>
             <div className={styles.product}>
               <div className={styles.product_slider}>
-                <ProductSlider />
+                <ProductSlider dataProduct={data?.product} />
               </div>
               <div className={styles.product_content}>
-                <Content />
+                <Content dataProduct={data?.product} />
               </div>
             </div>
-            <Description />
+            <Description dataProduct={data?.product} />
           </div>
-          <Similar/>
+          <Similar dataProduct={data?.product}/>
           <Contact/>
         </div>
       </div>
@@ -34,10 +41,8 @@ const Product = () => {
 export default Product;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // Example: Fetch the list of product slugs from an API or database
-  const productSlugs = ["salom", "slug2", "slug3"]; // Replace with actual product slugs
+  const productSlugs = ["salom", "slug2", "slug3"]; 
 
-  // Map product slugs to paths
   const paths = productSlugs.map((slug) => ({
     params: { slug: slug },
   }));

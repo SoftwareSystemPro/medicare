@@ -39,9 +39,9 @@ const BlogComponent = () => {
       <div className={styles.similar}>
         <h2>{t("Blog.1")}</h2>
         <div className={styles.cards}>
-          {/* {DataCard.slice(0, 4).map((elem, index) => (
+          {DataCard.slice(0, 4).map((elem, index) => (
             <CardCommon key={index} cardData={elem} />
-          ))} */}
+          ))}
         </div>
       </div>
     </div>

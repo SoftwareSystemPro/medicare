@@ -6,12 +6,16 @@ import ProductIcon from "../../../../public/product/content-icon.svg";
 import ProductIcon2 from "../../../../public/product/content-icon2.svg";
 import ProductIcon3 from "../../../../public/product/content-icon3.svg";
 import Image from "next/image";
+import { ContentProps } from "./content.props";
+import { useRouter } from "next/router";
 
-const Content = () => {
+const Content = ({dataProduct}:ContentProps) => {
   const t = useTranslations();
+  const {locale} = useRouter();
+  
   return (
     <div className={styles.content}>
-      <h2>Перчатки нестерильные Unigloves</h2>
+      <h2>{locale == "ru" ? dataProduct?.titleRu:locale == "en" ? dataProduct?.titleEn:locale == "uz" ? dataProduct?.titleUz:null}</h2>
       <div className={styles.product_payment}>
         <div className={styles.product_payment_bottom}>
           <div className={styles.product_payment_top}>
@@ -47,7 +51,7 @@ const Content = () => {
         </div>
       </div>
       <div className={styles.buttons}>
-        <button className={styles.button}>{t('Product.7')}</button>
+        <a className={styles.button} href="tel:+998 (99) 701 30 22">{t('Product.7')}</a>
         <button className={styles.button_active}>{t('Product.8')}</button>
       </div>
     </div>

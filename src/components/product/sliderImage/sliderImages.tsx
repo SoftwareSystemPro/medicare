@@ -3,15 +3,16 @@ import { Navigation, Thumbs, Mousewheel } from "swiper/modules";
 import "swiper/css";
 import { useState } from "react";
 import styles from "./style.module.css";
+import { ContentProps } from "../Content/content.props";
 
-function ProductSlider() {
+function ProductSlider({dataProduct}:ContentProps) {
     const [thumbsSwiper, setThumbsSwiper] = useState<typeof Swiper | any>(null);
-
+  
   const slides = [
-    `https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg`,
-    `https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg`,
-    `https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg`,
-    `https://www.medischevakhandel.nl/public/data/image/article/9014/24969/large/unigloves-nitril-handschoenen-paars-indigo-100-stuks.jpg`,
+    `${dataProduct?.image1?.url}`,
+    `${dataProduct?.image2?.url}`,
+    `${dataProduct?.image3?.url}`,
+    `${dataProduct?.image4?.url}`,
   ];
 
   return (

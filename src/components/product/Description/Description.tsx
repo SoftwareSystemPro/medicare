@@ -1,13 +1,17 @@
 import React from 'react'
 import styles from "./style.module.css"
 import { useTranslations } from 'next-intl'
-const Description = () => {
+import { ContentProps } from '../Content/content.props';
+import { useRouter } from 'next/router';
+const Description = ({dataProduct} : ContentProps ) => {
+  const {locale} = useRouter();
   const t = useTranslations();
   return (
     <div className={styles.description}>
       <h3>{t('Product.9')}</h3>
       <hr />
-      <p>{"Нестерильные медицинские перчатки - незаменимый инструмент в сфере здравоохранения, где безопасность и гигиена на первом месте. Они являются надежной защитой для медицинского персонала и пациентов во время различных процедур и контактов с потенциально опасными веществами. Эти перчатки обеспечивают надежную защиту от контакта с инфекционными материалами, телесными жидкостями и химическими веществами, что является крайне важным в условиях повышенного риска передачи инфекций и заражений.\n\nНестерильные медицинские перчатки обладают исключительной гибкостью и комфортом, обеспечивая свободу движений и максимальный контроль во время работы. Их легкость и удобство позволяют медицинскому персоналу эффективно выполнять процедуры и обеспечивать качественный уход за пациентами, не ощущая дискомфорта или утомления.\n\nБудучи надежным барьером для защиты от различных опасностей, нестерильные медицинские перчатки становятся незаменимым помощником в каждой медицинской практике. Они не только обеспечивают безопасность и защиту, но и способствуют повышению эффективности работы и улучшению общего качества медицинского обслуживания."}</p>
+      <div  className={styles.description} dangerouslySetInnerHTML={{__html: locale == "ru" ? dataProduct?.descriptionRu?.html : locale == "en" ? dataProduct?.descriptionEn?.html : locale == "uz" ? dataProduct?.descriptionUz?.html :dataProduct?.descriptionRu?.html}}>
+              </div>
     </div>
   )
 }

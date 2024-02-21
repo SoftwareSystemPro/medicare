@@ -16,6 +16,7 @@ query ProductCard($categorySlug: String) {
       categorySlug
       categoryUz
     }
+    slug
   }
 }
 `
