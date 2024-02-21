@@ -4,14 +4,18 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useTranslations } from 'next-intl';
 import { DropDownProps } from './dropdown.props';
 import { useRouter } from 'next/router';
+import { useQuery } from '@apollo/client';
+import { GET_CATEGORIES } from 'src/services/category.query';
+import { CategoryType } from 'src/interface/category.type';
 const DropDown = ({ handleDrawerClose }: DropDownProps) => {
-    const dataDropDown = [1 ,2 ,3 ,4 ,5 ,6 ] 
+    const {loading ,error ,data} = useQuery(GET_CATEGORIES)
+    
     const router = useRouter();
     const { locale } = router;
     const t = useTranslations('Home')
     const handleClick = (e:React.MouseEvent<HTMLButtonElement>) => {
       handleDrawerClose(); 
-      router.push(`/catalog/catalog${e.currentTarget.value}`)
+      router.push(`/catalog/${e.currentTarget.value}`)
   };
 
   return (
@@ -21,8 +25,8 @@ const DropDown = ({ handleDrawerClose }: DropDownProps) => {
     <KeyboardArrowDownIcon sx={{color:'black'}}/>
     </div>
     <div className={styles.dropdown_content}>
-        {dataDropDown.map((elem , index) => 
-        <button key={index} value={elem} onClick={handleClick}>Перчатки нестерильные</button>
+        {data?.categories?.map((elem:CategoryType , index:number) => 
+        <button key={index} value={elem.categorySlug} onClick={handleClick}>{locale == "ru" ? elem.categoryRu: locale == "en" ? elem.categoryEn:locale == "uz" ? elem.categoryUz:elem.categoryRu}</button>
             )}
     </div>
     </div>

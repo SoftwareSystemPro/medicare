@@ -1,9 +1,9 @@
 export interface CardBlog {
-    slug : string ,
-    image : {
-        url : string
-    },
-    titleEn : string,
-    titleRu : string,
-    titleUz : string,
+    titleEn:string
+    titleRu:string
+    titleUz:String
+    image: {
+      url:string
+    }
+    slug:string
 }

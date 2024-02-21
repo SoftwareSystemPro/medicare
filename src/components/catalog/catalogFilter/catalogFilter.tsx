@@ -2,24 +2,32 @@ import { Box, Button, Divider, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import styles from "./style.module.css";
 import { Fragment } from "react";
+import { useQuery } from "@apollo/client";
+import { GET_CATEGORIES } from "src/services/category.query";
+import { CategoryType } from "src/interface/category.type";
+import { useRouter } from "next/router";
+import { useTranslations } from "next-intl";
 const CatalogFilter = () => {
-  const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const router = useRouter()
+  const {locale } = useRouter();
+  const t = useTranslations()
+  const {loading ,error ,data} = useQuery(GET_CATEGORIES)
   return (
     <Box width={{ xs: "100%", md: "24%" }} sx={{display:{xs:'none' , md :'block'}}}>
       <Box
         position={"sticky"}
         top={"200px"}
-        sx={{ transition: "all .3s ease" }}
+        sx={{ transition: "all .3s ease"  , marginTop:"20px"}}
       >
         <Box padding={"20px"} sx={{ background: "white" }} borderRadius={"3px"}>
           <Typography variant="h5" style={{ color: "#000000" }}>
-            Category
+            {t('Card.2')}
           </Typography>
           <Box
             sx={{ display: "flex", flexDirection: "column", marginTop: "20px" , overflowY:'scroll' , height:'350px', scrollbarColor:'rgba(11, 63, 100, 1) white'  , scrollbarWidth:'thin'}}
           >
-            {data.map((elem) => (
-              <Fragment key={elem}>
+            {data?.categories?.map((elem:CategoryType , index : number) => (
+              <Fragment key={index}>
                 <Button
                   fullWidth
                   sx={{
@@ -28,9 +36,9 @@ const CatalogFilter = () => {
                     paddingBottom:'15px',
                     color: "#000000",
                   }}
-                  // onClick={()=>router.push(`/category/${elem.slug}`)}
+                  onClick={()=>router.push(`/catalog/${elem.categorySlug}`)}
                 >
-                  Перчатки нестерильные
+                  {locale == "ru" ? elem.categoryRu.slice(0 ,20): locale == "en" ? elem.categoryEn.slice(0 ,20):locale == "uz" ? elem.categoryUz.slice(0 ,20):elem.categoryRu}...
                   <ArrowForwardIosIcon />
                 </Button>
                 <Divider sx={{ backgroundColor: "gray" }} />
