@@ -1,7 +1,7 @@
 .content h2{
     margin: 0; 
     padding: 0;
-    font-family: 'Clear Sans';
+ 
     font-size: 39px;
     font-weight: 700;
     line-height: 51px;
@@ -25,7 +25,7 @@
     margin-top: 40px;
 }
 .button{
-    font-family: 'Clear Sans';
+ 
     font-weight: 700;
     font-size: 18px;
     line-height: 24.5px;
@@ -39,7 +39,7 @@
     margin-right: 60px;
 }
 .button_active{
-    font-family: 'Clear Sans';
+ 
     font-weight: 700;
     font-size: 18px;
     line-height: 24.5px;
@@ -52,7 +52,7 @@
     border: 1px solid rgba(226, 49, 54, 1);    
 }
 .product_network_card span{
-    font-family: 'Clear Sans';
+ 
     font-size: 14px;
     font-weight: 20px;
     font-weight: 300;
@@ -62,7 +62,7 @@
     display: flex;
 }
 .product_payment_top p{
-    font-family: 'Clear Sans';
+ 
     font-size: 18px;
     font-weight: 300;
     line-height: 23px;
@@ -77,7 +77,7 @@
 
 }
 .product_payment_top ul li{
-    font-family: 'Clear Sans';
+ 
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
@@ -125,7 +125,7 @@
         margin-top: 50px;
     }
     .button{
-        font-family: 'Clear Sans';
+     
         font-weight: 700;
         font-size: 14px;
         line-height: 24.5px;
@@ -140,7 +140,7 @@
         margin-right: 20px;
     }
     .button_active{
-        font-family: 'Clear Sans';
+     
         font-weight: 700;
         font-size: 14px;
         line-height: 24.5px;

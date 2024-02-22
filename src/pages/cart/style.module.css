@@ -1,0 +1,140 @@
+.cart_section{
+    margin-top: 160px;
+}
+.Cart h2{
+    text-align: center;
+    color: rgba(11, 63, 100, 1);
+    font-size: 40px;
+    font-weight: 700;
+}
+.cart_box{
+    background-color: white;
+    padding-bottom: 40px;
+}
+.cart_box_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+}
+.cart_box_top_left h3{
+    color: #0B3F64;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.cart_box_top_left p{
+    color: #0B3F64;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+.cart_box_top button{
+    color: white;
+    background-color: #E23136;
+    padding: 12px 31px 12px 31px;
+    border: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.cart{
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px 0px;
+}
+.cart h4{
+    font-size: 21px;
+    width: 50%;
+    margin: 0;
+    padding: 10px;
+}
+.cart_cards{
+    padding: 0px 50px;
+}
+.count{
+    margin-left: auto;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.count span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.count button:nth-child(3){
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: white;
+    color: green;
+    border: 3px solid green;
+    font-size: 25px;
+    font-weight: 700;
+}
+.count span{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+.count button:nth-child(1){
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: white;
+    color: red;
+    border: 3px solid red;
+    font-size: 25px;
+    font-weight: 700;
+}
+@media only screen and (max-width:768px) {
+    .cart_section{
+        margin-top: 120px;
+    }
+    .cart_box_top{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        border-bottom: 1px solid gray;
+        
+    }
+    .cart_box{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .cart{
+        width: 49%;
+        flex-direction: column;
+    }
+    .cart_cards{
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .cart img{
+        width: 100%;
+    }
+    .cart h4{
+        width: 100%;
+        font-size: 12px;
+    }
+    .count{
+        margin-bottom: 20px;
+        margin-top: auto;
+    }
+}

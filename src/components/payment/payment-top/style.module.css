@@ -3,7 +3,7 @@
 }
 .payment_top h2{
     text-align: center;
-    font-family: 'Clear Sans';
+ 
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
@@ -16,7 +16,7 @@
 .payment_box h3{
     display: flex;
     align-items: center;
-    font-family: 'Clear Sans';
+ 
     font-weight: 700;
     font-size: 21px;
     line-height: 23px;

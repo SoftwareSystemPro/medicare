@@ -3,7 +3,7 @@
     justify-content: space-between;
 }
 .headerTopPhone{
-    font-family: 'Clear Sans';
+ 
     font-weight: 500;
     color: white;
     font-size: 20px;
@@ -13,7 +13,7 @@
     margin-top: 20px;
 }
 .headerTopLocation{
-    font-family: 'Clear Sans';
+ 
     font-weight: 500;
     color: white;
     font-size: 21px;
@@ -22,7 +22,7 @@
     width: 350px;
 }
 .footerLeftBottom{
-    font-family: 'Clear Sans';
+ 
     font-weight: 400;
     font-size: 15px;
     margin-top: 30px;

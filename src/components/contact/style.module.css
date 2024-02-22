@@ -13,14 +13,14 @@
 .form_wrapper h2{
     text-align: center;
     font-weight: 700;
-    font-family: 'Clear Sans';
+ 
     font-size: 39px;
     color: white;
 }
 .form_wrapper p{
     text-align: center;
     font-weight: 700;
-    font-family: 'Clear Sans';
+ 
     font-size: 21px;
     color: white;
 }
@@ -42,7 +42,7 @@
     padding: 11px;
 }
 .form button{
-    font-family: 'Clear Sans';
+ 
     font-size: 18px;
     font-weight: 700;
     color: white;
@@ -64,7 +64,7 @@
     margin-bottom: 30px;
 }
 .form input::placeholder{
-    font-family: 'Clear Sans';
+ 
     font-size: 18px;
     font-weight: 300;    
     color: #ffffff90;
@@ -98,7 +98,7 @@
     .form_wrapper h2{
         text-align: center;
         font-weight: 700;
-        font-family: 'Clear Sans';
+     
         font-size: 24px;
         color: white;
     }
@@ -106,7 +106,7 @@
     .form_wrapper p{
         text-align: center;
         font-weight: 700;
-        font-family: 'Clear Sans';
+     
         font-size: 15px;
         color: white;
     }

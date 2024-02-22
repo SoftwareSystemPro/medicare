@@ -8,7 +8,7 @@
     align-items: center;
 }
 .top_catalog span {
-    font-family: 'Clear Sans';
+ 
     font-size: 18px;
     font-weight: 300;
     line-height: 20.5px;
@@ -22,7 +22,7 @@
 }
 .CatalogSection h2{
     text-align: center;
-    font-family: 'Clear Sans';
+ 
     font-size: 39px;
     line-height: 41px;
     color: rgba(11, 63, 100, 1);

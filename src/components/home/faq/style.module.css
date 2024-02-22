@@ -13,12 +13,12 @@
 .faq h2{
     text-align: center;
     color: #0B3F64;
-    font-family: 'Clear Sans';
+ 
     font-size: 39px;
     font-weight: 700;
 }
 .faq span{
-    font-family: 'Clear Sans';
+ 
     font-weight: 700;
 
 }
@@ -42,7 +42,7 @@
     .faq h2{
         text-align: center;
         color: #0B3F64;
-        font-family: 'Clear Sans';
+     
         font-size: 29px;
         font-weight: 700;
     }

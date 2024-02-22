@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -25,6 +26,7 @@ import { GetServerSidePropsContext } from 'next';
 import DropDown from './headerbottom/dropdown';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import AddIcon from '@mui/icons-material/Add';
 import Link from 'next/link';
 interface Props {
   window?: () => Window;
@@ -35,6 +37,18 @@ const drawerWidth = '100%';
 export default function Navbar(props: Props) {
   const { window } = props;
   const t = useTranslations('Home');
+  const [cardDataLength, setCardDataLength] = React.useState<number>(0);
+
+  useEffect(() => {
+    const cardData = localStorage.getItem('cardData');
+    if (cardData) {
+      const parsedCardData = JSON.parse(cardData);
+      setCardDataLength(parsedCardData.length);
+    }
+  }, [cardDataLength]);
+  
+  
+  
   const router = useRouter();
   const { locales, locale, pathname, query, asPath } = router;
   
@@ -143,9 +157,10 @@ const navItems = [
             <hr />
             <HeaderBottom navItems={navItems}/>
           </Box>
-            <div className={styles.header_cart}>
+            <div className={styles.header_cart} onClick={() => router.push('/cart')}>
             <LocalMallIcon sx={{color:'rgba(11, 63, 100, 1)', width:'44px', height:'40px'}}/>
-              <span>1</span>
+              {/* <span><AddIcon sx={{color:'white'}}/></span> */}
+             
             </div>
             <IconButton
             color="inherit"

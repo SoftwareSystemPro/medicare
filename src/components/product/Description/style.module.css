@@ -4,7 +4,7 @@
 .description h3{
     margin: 0;
     padding: 0;
-    font-family: 'Clear Sans';
+ 
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
@@ -19,7 +19,7 @@
 .description p{
     white-space : pre-wrap;
     width: 60%;
-    font-family: 'Clear Sans';
+ 
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;

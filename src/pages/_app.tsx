@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+import { useEffect, useState } from 'react';
 
 const graphAPI = process.env.NEXT_PUBLIC_HYGRAPH_ENDPOINT as string
 
@@ -15,6 +16,9 @@ const client = new ApolloClient({
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
+
+  
+  
   const { locale } = router;
   return (
     <>
