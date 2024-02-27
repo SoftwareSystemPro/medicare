@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from "./style.module.css"
-import {DataCard} from "../../../services/fakedata"
 import CardCommon from 'src/components/common/card/cardCommon'
 import XitBackground from "src/../public/home/xit-background.svg"
 import Image from 'next/image'

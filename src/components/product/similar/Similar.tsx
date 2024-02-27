@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl"
 import styles from "./style.module.css"
-import { DataCard } from "src/services/fakedata";
 import CardCommon from "src/components/common/card/cardCommon";
 import { ContentProps } from "../Content/content.props";
 import { useQuery } from "@apollo/client";

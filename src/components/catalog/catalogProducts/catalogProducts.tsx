@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './style.module.css'
-import { DataCard } from 'src/services/fakedata'
 import CardCommon from 'src/components/common/card/cardCommon'
 import { useQuery } from '@apollo/client'
 import { GET_PRODUCTCARD } from 'src/services/product.query'
