@@ -9,9 +9,11 @@ import Ask from 'src/components/home/ask/Ask'
 import FaqComponent from 'src/components/home/faq/Faq'
 import BlogHome from 'src/components/home/blog/blogHome'
 import Contact from 'src/components/contact/Contact'
+import Seo from 'src/layout/seo/seo'
 
 const Home = () => {
   return (
+    <Seo metaTitle={'Качественные медицинские изделия от Medicare LLC'} metaDescription={'Надежные решения для вашей медицинской деятельности'} metaKeywords={'Medicare'}>
       <Layout>
         <HomeHero/>
         <OurPartner/>
@@ -23,6 +25,8 @@ const Home = () => {
         <BlogHome/>
         <Contact/>
       </Layout>
+    </Seo>
+
   )
 }
 

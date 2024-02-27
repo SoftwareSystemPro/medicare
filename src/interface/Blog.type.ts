@@ -7,6 +7,7 @@ export interface Blog{
     }
     descriptionRu: {
       html:string
+      text:string
     }
     descriptionUz :{
       html:string

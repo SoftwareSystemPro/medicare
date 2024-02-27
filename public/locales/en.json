@@ -1,24 +1,150 @@
 {
-    "Home" : {
-        "Header" : {
-            "0" : "Delivery to any city in Uzbekistan!",
-             "1" : "Callback",
-             "2": "Directory",
-             "3" : "About us",
-             "4" : "Terms of cooperation",
-             "5" : "Articles",
-             "6" : "Contacts"
-        },
-        "HomeHero" : {
-            "0" : "",
-            "2": "Our partners"
-        }
+  "Home": {
+    "0":"Our operators will contact you shortly",
+    "Header": {
+      "0": "Delivery to any city of Uzbekistan!",
+      "1": "Callback",
+      "2": "Catalog",
+      "3": "About us",
+      "4": "Terms of cooperation",
+      "5": "Articles",
+      "6": "Contacts"
     },
-    "Contact" : {
-        "0" : "Hello 2"
+    "Footer":{
+      "0": " © Developed by the Software System Pro team",
+      "1" : "Uzbekistan, Tashkent city, 3-B.Farobiy str.",
+      "2": "We are in the social networks"
     },
-    "Card": {
-        "0": "More details",
-        "1": "Add to cart"
-      }
+    "HomeHero": {
+      "0": "High-quality medical products from Medicare LLC",
+      "1": "Reliable solutions for your medical activity",
+      "2": "Our partners"
+    },
+    "AboutVideo": {
+      "0": "Medicare LLC",
+      "1": "Medicare LLC is a company created with the aim of providing medical institutions and healthcare professionals with reliable and high-quality consumables.\n\n Since our foundation in 2018, we have been striving to provide our customers with products that meet the highest quality standards.\n\n We are also currently considering the possibility of starting wholesale imports of adhesive bandages, expanding our product line to meet the growing needs of our customers for the highest quality medical products."
+    },
+    "Xit": {
+      "0": "Sales hits"
+    },
+    "OurAdvanges": {
+      "0": "Our advantages",
+      "1": "Strict quality control",
+      "2": "Wide range of products",
+      "3": "Professional service",
+      "4": "Individual approach",
+      "5": "Innovative solutions",
+      "6": "Fast and reliable delivery"
+    },
+    "Ask" : {
+      "0" : "Ask us a question",
+      "1" : "Your name",
+      "2" : "Your phone*",
+      "3" : "Your question",
+      "4" : "Send"
+    },
+    "Faq" : {
+      "0" : "Frequently Asked Questions",
+      "1": "What types of medical supplies do you offer?",
+      "2": "- We offer a wide range of medical supplies, including syringes, IVs, bandages, surgical gloves, sutures and other high-quality disposable materials.",
+      "3" : "What are the terms of payment and delivery?",
+      "4" : "- Delivery is free within the city of Tashkent. The minimum order is 300,000 soums.",
+      "5": "How can I find out about the availability of products and place an order?",
+      "6": "- You can find out about the availability of products by ordering a callback on our website, or by calling the number indicated on the website.",
+      "7": "What are the conditions for returning or exchanging products?",
+      "8": "- We guarantee the quality of our products. If a refund or exchange is required, please contact our customer service department for more information.",
+      "9": "How can I get support and advice on using your products?",
+      "10" : "- Our team is always ready to provide you with support and advice on the use of our products. You can contact us by phone or e-mail to get the necessary help and information.",
+      "11" : "What are the advantages of your products over competitors?",
+      "12" : "- Our medical supplies are of high quality and reliability. We strive to continuously improve our products and provide our customers with the best service. In addition, we are proud to offer competitive prices and flexible terms of cooperation."
+    },
+    "Blog" : {
+      "0": "Useful information"
+    }
+  },
+  "Contact": {
+    "0": "Half your address:to consult a specialist",
+    "1": "Leave your number and we will call you back"
+  },
+  "Card": {
+    "0": "More ",
+    "1": "Add Cart",
+    "2": "Categories"
+  },
+  "Product" : {
+    "0": "Delivery methods:",
+    "1": "delivery in Tashkent for free",
+    "2": "Payment:",
+    "3": "Payment by Click , Payme card",
+    "4": "Quality guarantee",
+    "5": "Prompt delivery",
+    "6": "All payment methods",
+    "7": "Details",
+    "8": "Add to cart",
+    "9": "Description",
+    "10": "Similar products"
+  },
+  "About" : {
+    "0": "Your reliable partner in healthcare",
+    "1": "At Medicare LLC, we pride ourselves on providing high-quality medical products that are a reliable standard in the healthcare industry. With our rich experience and unique approach to quality, we strive to provide our customers with everything they need for effective and safe medical practice.The focus of our philosophy is the pursuit of innovation and continuous improvement. We are constantly researching new technologies and developments in order to offer our customers the most advanced and effective solutions. Our goal is not just to follow trends, but to set them, providing our customers with access to the most advanced products.",
+    "2": "We believe that everyone deserves the highest level of care and safety in the medical field. Our mission is to make medical practice more efficient, safe and accessible by offering a wide range of high-quality products and providing outstanding service.",
+    "3": "We value our customers and strive to build long-term partnerships based on trust and mutual respect.",
+    "4": "Strict quality control",
+    "5": "We carry out careful quality control at every stage of production to ensure the perfection of each product, achieving high standards in the field of medical safety.",
+    "6": "Professional service",
+    "7": "Our team is ready to provide highly qualified support and advice on all issues related to our products and services.",
+    "8": "Individual approach",
+    "9": "Our company values the individual needs of each client, and we are ready to offer solutions that best meet their unique requirements and budget.",
+    "10": "A wide range of products",
+    "11": "We offer a wide range of medical supplies, allowing clinics and hospitals to get everything they need from one a reliable supplier.",
+    "12": "Fast and reliable delivery",
+    "13": "Medicare LLC ensures prompt delivery of products, reducing waiting times and ensuring the constant availability of important medical supplies.",
+    "14": "Our certificates"
+  },
+  "Payment" : {
+    "0" : "Payment and delivery",
+    "1" : "Payment",
+    "2" : "Transfer to a bank account",
+    "3" : "Payment for goods by bank transfer",
+    "4" : "Online payment via payment systems",
+    "5" : "Cash",
+    "6" : "Payment for goods in cash upon receipt in Tashkent",
+    "7" : "Delivery",
+    "8" : "Delivery in Tashkent",
+    "9" : "Address delivery:\n\n Delivery time is 1-3 days.\n\n The cost of delivery is free shipping when the order amount is from 300,000 soums.\n\n Payment for the order can be made in cash or by bank card.",
+    "10": "Delivery to the regions",
+    "11": "Delivery via the postal service.\n\n Delivery time is 2-5 days.\n\nThe cost of delivery is according to the tariffs of the postal service.\n\n Payment for the order can be made by transfer to a bank account or online using payment systems.",
+    "12": "Articles",
+    "13": "read"
+  },
+  "Blog" :{ 
+    "0": "Share an article",
+    "1":"Current products"
+  },
+  "Cart" : {
+    "0" : "Shopping cart",
+    "1" : "Total quantity:",
+    "2" : "To continue, click the Checkout button",
+    "3" : "Place an order",
+    "4" : "Photo",
+    "5" : "Name",
+    "6" : "Quantity:"
+  },
+  "Order":{
+    "0" : "Checkout",
+    "1": "Customer information:",
+    "2" : "Name",
+    "3": "Phone:",
+    "4": "Email:",
+    "5": "Comment:",
+    "6": "Clarifications to the order",
+    "7": "Confirm the order",
+    "8": "Products in the basket",
+    "9": "pcs"
+  },
+  "ContactPage" :{
+    "0" : "Our address:",
+    "1" : "Contact numbers:",
+    "2" : "Email address:"
+  }
 }

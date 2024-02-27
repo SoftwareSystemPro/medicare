@@ -37,6 +37,8 @@ margin-bottom: 50px;
     border: none;
     background-color: transparent;
     padding: 11px;
+    width: 100%;
+    color: white;
 }
 .form button{
  
@@ -66,13 +68,76 @@ margin-bottom: 50px;
     font-weight: 300;    
     color: #ffffff90;
 }
-
+.modal_Success{
+    position: fixed;
+    z-index: 10000;
+    width: 50%;
+    margin-left: 20%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px;
+    border-radius: 5px;
+    justify-content: center;
+    transition: 0.5s;
+    top: 20px;
+}
+.modal_Success_no_active{
+    position: fixed;
+    z-index: 10000;
+    width: 50%;
+    margin-left: 20%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px;
+    border-radius: 5px;
+    justify-content: center;
+    transition: 0.5s;
+    top: -120px;
+}
 @media only screen and (max-width:600px) {
     .ask h2{
      
         font-size: 29px;
         font-weight: 700;
         color: white;
+    }
+    .modal_Success{
+        position: fixed;
+        z-index: 10000;
+        width: 90%;
+        margin-left: 5%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        box-shadow: 0px 0px 5px 1px;
+        border-radius: 5px;
+        justify-content: center;
+        transition: 0.5s;
+        top: 20px;
+    }
+    .modal_Success_no_active{
+        position: fixed;
+        z-index: 10000;
+        width: 90%;
+        margin-left: 5%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        box-shadow: 0px 0px 5px 1px;
+        border-radius: 5px;
+        justify-content: center;
+        transition: 0.5s;
+        top: -120px;
     }
     .ask{
         width: 90%;

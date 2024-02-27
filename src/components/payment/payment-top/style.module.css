@@ -50,6 +50,9 @@
 }
 
 @media only screen and (max-width:900px) {
+    .payment_top{
+        margin-top: 60px;
+    }
     .payment_box{
         background-color: white;
         padding: 20px;

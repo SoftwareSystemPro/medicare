@@ -10,3 +10,11 @@ query Categories {
     }
   }
 `
+
+export const GET_CATEGORIES_SLUG =  gql`
+query Category($categorySlug: String!) {
+  category(where: {categorySlug: $categorySlug}) {
+    categoryRu
+  }
+}
+`

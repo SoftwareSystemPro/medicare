@@ -11,7 +11,7 @@ const FaqComponent = () => {
         <h2>{t("Faq.0")}</h2>
         <div className={styles.accardion}>
           <div className={styles.accardion_nav}>
-            <Accordion defaultExpanded>
+            <Accordion >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1-content"
@@ -53,7 +53,7 @@ const FaqComponent = () => {
               </AccordionSummary>
               <AccordionDetails>{t("Faq.8")}</AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel2-content"
@@ -63,7 +63,7 @@ const FaqComponent = () => {
               </AccordionSummary>
               <AccordionDetails>{t("Faq.10")}</AccordionDetails>
             </Accordion>
-            <Accordion >
+            <Accordion defaultExpanded>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel3-content"

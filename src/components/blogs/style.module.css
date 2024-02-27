@@ -35,7 +35,7 @@
 .data_button{
     display: flex;
     align-items: center;
- 
+    cursor: pointer;
     font-weight: 700;
     font-size: 18px;
     line-height: 24.3px;

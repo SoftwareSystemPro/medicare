@@ -18,15 +18,15 @@ const Footer = () => {
   const t = useTranslations('Home');
   const navItems = [
     {
-        route: '/category',
+        route: '/about',
         label :t('Header.3')
     },
     {
-        route: '/blog',
+        route: '/payment',
         label :t('Header.4')
     },
     {
-        route: '/contact',
+        route: '/blogs',
         label :t('Header.5')
     },
     {
@@ -64,9 +64,9 @@ const Footer = () => {
           <LocalPhoneIcon sx={{marginRight:"7px" ,width:"20px", height:'20px'}}/> 
           +998 (99) 701 30 22
         </a>
-        <a className={styles.headerTopPhone} href="tel:+998 (99) 701 30 22">
+        <a className={styles.headerTopPhone} href="tel:+998 (55) 901 30 22">
           <LocalPhoneIcon sx={{marginRight:"7px" ,width:"20px", height:'20px'}}/> 
-          +998 (99) 701 30 22
+          +998 (55) 901 30 22
         </a>
         <a className={styles.headerTopPhone} href="tel:medicare@gmail.com">
         <MailOutlineIcon sx={{marginRight:"7px" ,width:"20px", height:'20px'}}/> 
@@ -76,9 +76,9 @@ const Footer = () => {
       <List>
         <a className={styles.headerTopLocation} href="tel:medicare@gmail.com">
         <LocationOnIcon sx={{marginRight:"7px" ,width:"30px", height:'30px'}}/> 
-          Узбекистан, город Ташкент, ул.Фаробий, 3-Б.
+        {t('Footer.1')}
         </a>
-        <p className={styles.footerLeftBottom}>Мы в соц. сетях</p>
+        <p className={styles.footerLeftBottom}>{t('Footer.2')}</p>
         <a className={styles.Network} href="">
           <InstagramIcon sx={{width:'30px', height:'30px'}}/>
         </a>
@@ -91,7 +91,7 @@ const Footer = () => {
       </List>
       </div>
       <div className={styles.Company}>
-          <h3>All rights reserved © 2024, Software System Pro</h3>
+          <h3>{t('Footer.0')}</h3>
       </div>
         </div>
     </Box>

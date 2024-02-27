@@ -3,6 +3,7 @@ import { gql } from "@apollo/client";
 export const GET_PRODUCTMORE =  gql`
 query ProductMore($slug: String) {
     product(where: {slug: $slug}) {
+      keywords
       descriptionEn {
         html
         text
@@ -33,6 +34,7 @@ query ProductMore($slug: String) {
       category {
         categorySlug
       }
+      slug
     }
   }
   

@@ -5,6 +5,7 @@ import React from 'react';
 import BlogComponent from 'src/components/blog/blog';
 import Contact from 'src/components/contact/Contact';
 import Layout from 'src/layout/layout';
+import Seo from 'src/layout/seo/seo';
 import { GET_BLOG } from 'src/services/blog.query';
 
 const Blog = () => {
@@ -12,13 +13,18 @@ const Blog = () => {
   const {loading ,error,data}= useQuery(GET_BLOG,{
     variables:{slug : query.blog}
   })
+  
   return (
-    <Layout>
+    <Seo metaTitle={data?.blogs?.titleRu} metaDescription={data?.blogs?.descriptionRu?.text.slice(0 , 150)} metaKeywords={data?.blogs?.keywords}>
+
+<Layout>
       <div className='container'>
         <BlogComponent dataBlog={data?.blogs}/>
         <Contact/>
       </div>
     </Layout>
+    </Seo>
+
   );
 };
 

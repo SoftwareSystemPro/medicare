@@ -9,8 +9,9 @@ import Image from 'next/image'
 import { useQuery } from '@apollo/client'
 import { GET_PARTNERS } from 'src/services/partners.query'
 import { Partners } from 'src/interface/partner.type'
+import { useTranslations } from 'use-intl'
 const OurPartner = () => {
-
+  const t = useTranslations();
   const {loading , error , data} = useQuery(GET_PARTNERS)
   var settings = {
     dots: false,
@@ -50,7 +51,7 @@ const OurPartner = () => {
       <div className={styles.section_our_partner}>
             <div className='container'>
         <div className={styles.our_partners}>
-          <h2>Наши партнеры</h2>
+          <h2>{t('Home.HomeHero.2')}</h2>
           <Slider {...settings}>
             {data?.partners_image?.map((elem:Partners , index:number) => 
                     <div key={index} className={styles.card}>

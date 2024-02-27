@@ -8,6 +8,7 @@ import IconImage3 from "../../../../public/about/about_icon3.svg"
 import IconImage4 from "../../../../public/about/about_icon4.svg"
 import IconImage5 from "../../../../public/about/about_icon5.svg"
 import Sertficate from "../../../../public/about/sertificates.png"
+import SertficateMobile from "../../../../public/about/sertificates-media.png"
 const AboutContentBottom = () => {
   const t = useTranslations();
   return (
@@ -57,7 +58,12 @@ const AboutContentBottom = () => {
     </div>
     <div className={styles.sertficate}>
       <h2>{t("About.14")}</h2>
+      <div className={styles.desktop_sertficate}>
       <Image src={Sertficate} alt='Sertficate image'/>
+      </div>
+      <div className={styles.mobile_sertficate}>
+      <Image src={SertficateMobile} alt='Sertficate image'/>
+      </div>
     </div>
     </>
   )

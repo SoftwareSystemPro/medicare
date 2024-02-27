@@ -3,5 +3,6 @@ export interface BlogsType{
     title : string,
     image : string,
     description : string,
-    date : string
+    date : string,
+    slug : string
 }

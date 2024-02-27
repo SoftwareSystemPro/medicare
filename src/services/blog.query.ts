@@ -6,11 +6,13 @@ query MyQuery($slug: String) {
       titleEn
       titleRu
       titleUz
+      keywords
       descriptionEn {
         html
       }
       descriptionRu {
         html
+        text
       }
       descriptionUz {
         html

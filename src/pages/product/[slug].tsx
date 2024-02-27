@@ -10,13 +10,16 @@ import Contact from "src/components/contact/Contact";
 import { useQuery } from "@apollo/client";
 import { GET_PRODUCTMORE } from "src/services/productMore.query";
 import { useRouter } from "next/router";
+import Seo from "src/layout/seo/seo";
 const Product = () => {
   const {query} = useRouter();
   const {loading , error , data} = useQuery(GET_PRODUCTMORE , {
     variables : {slug : query.slug}
   })
+    
   return (
-    <Layout>
+      <Seo metaTitle={data?.product?.titleRu} metaDescription={data?.product?.descriptionRu?.text.slice(0 , 150)} metaKeywords={data?.product?.keywords}>
+            <Layout>
       <div className={styles.section_product}>
         <div className="container">
           <div className={styles.product_box}>
@@ -35,6 +38,7 @@ const Product = () => {
         </div>
       </div>
     </Layout>
+      </Seo>
   );
 };
 

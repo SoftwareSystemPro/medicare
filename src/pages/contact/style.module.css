@@ -1,0 +1,63 @@
+.contact_section{
+    margin-top: 160px;
+}
+.contact_section h2{
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    color: #0B3F64;
+    font-weight: 700;
+}
+.contact_section iframe {
+        width: 50%;
+        height: 55vh;
+}
+.contact{
+    display: flex;
+    height: 100%;
+}
+.contact_box{
+    background-color: white;
+    padding: 30px;
+    height: 55vh;
+    width: 50%;
+}
+.contact_box p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: black;
+}
+.contact_box a{
+    font-size: 21px;
+    line-height: 24px;
+    color: black;
+    font-weight: 700;
+}
+
+@media only screen and (max-width:900px) {
+    .contact_section{
+        margin-top: 60px;
+    }
+    .contact{
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .contact_box{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 100%;
+    }
+    .contact_section iframe{
+        width: 100%;
+    }
+    .contact_phones{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_phones a{
+        margin-bottom: 10px;
+    }
+}

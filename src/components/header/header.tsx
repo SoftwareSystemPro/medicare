@@ -81,7 +81,7 @@ const navItems = [
   const drawer = (
     <Box  sx={{ textAlign: 'center' }}>
       <Box sx={{display:'flex' , justifyContent:'space-between' ,alignItems:'center' ,paddingX:'20px'}}>
-      <Box onClick={() => router.push(`/${locale}`)} sx={{display:'flex' , alignItems:'center'}}>
+      <Box onClick={() => router.push(`/${locale}`)} sx={{display:'flex' , alignItems:'center' , cursor:'pointer'}}>
         <Image src={Logo} alt='Logo Image'/>
       </Box>
       <Box onClick={() => setMobileOpen(false)}>
@@ -106,9 +106,9 @@ const navItems = [
           <LocalPhoneIcon sx={{marginRight:"7px" ,width:"30px", height:'30px'}}/> 
           +998 (99) 701 30 22
         </a>
-        <a className={styles.headerTopPhone} href="tel:+998 (99) 701 30 22">
+        <a className={styles.headerTopPhone} href="tel:+998 (55) 901 30 22">
           <LocalPhoneIcon sx={{marginRight:"7px" ,width:"30px", height:'30px'}}/> 
-          +998 (99) 701 30 22
+          +998 (55) 901 30 22
         </a>
         <a className={styles.headerTopPhone} href="mailto:medicare@gmail.com">
           <MailOutlineIcon sx={{marginRight:"7px" ,width:"30px", height:'30px'}}/> 

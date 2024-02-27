@@ -79,7 +79,7 @@ const CardCommon = ({ cardData }: CardProps) => {
         <div className={styles.Card} key={cardData.slug}>
             <div className={styles.Card_imgs}>
                 <Image src={cardData.image1?.url} width={324} height={201} alt='card Image' />
-                <span>{cardData.category.categoryRu}</span>
+                <span>{locale == 'ru' ? cardData.category.categoryRu : locale == 'en' ? cardData.category.categoryEn : locale == 'uz' ? cardData.category.categoryUz : cardData.category.categoryRu}</span>
             </div>
             <h4>{locale == 'ru' ? cardData.titleRu?.slice(0, 36) : locale == 'uz' ? cardData.titleUz?.slice(0, 36) : locale == 'en' ? cardData.titleEn?.slice(0, 36) : null}...</h4>
             <div className={styles.card_buttons}>

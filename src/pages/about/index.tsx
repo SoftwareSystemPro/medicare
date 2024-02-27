@@ -4,15 +4,18 @@ import { GetStaticPropsContext } from "next";
 import AboutContentTop from "../../components/about/aboutContentTop/aboutContentTop";
 import AboutContentBottom from "../../components/about/aboutContentBottom/aboutContentBottom";
 import Contact from "src/components/contact/Contact";
+import Seo from "src/layout/seo/seo";
 const About = () => {
   return (
-    <Layout>
+      <Seo metaTitle={"MEDICARE LLC Ваш надёжный партнер в здравоохранении"} metaDescription={"Мы в Medicare LLC гордимся тем, что предоставляем высококачественные медицинские изделия, которые являются надежным стандартом в индустрии здравоохранения. С нашим богатым опытом и уникальным подходом к качеству, мы стремимся обеспечить наших клиентов всем необходимым для эффективной и безопасной медицинской практики."} metaKeywords={"medicare о нас"} >
+            <Layout>
       <div className="container">
           <AboutContentTop/>
           <AboutContentBottom/>
           <Contact/>
       </div>
     </Layout>
+      </Seo>
   )
 }
 

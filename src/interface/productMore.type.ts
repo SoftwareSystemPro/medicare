@@ -26,7 +26,9 @@ export interface ProductMoreType {
       titleEn:string
       titleRu:string
       titleUz:string
+      keywords : string
       category: {
         categorySlug : string
       }
+      slug:string
 }

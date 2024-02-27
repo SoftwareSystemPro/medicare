@@ -103,19 +103,23 @@
 }
 @media only screen and (max-width:768px) {
     .cart_section{
-        margin-top: 120px;
+        margin-top: 60px;
     }
     .cart_box_top{
         display: flex;
         flex-direction: column;
         padding: 20px 10px;
         border-bottom: 1px solid gray;
-        
+        text-align: center;
     }
     .cart_box{
         width: 95%;
         margin: 0 auto;
     }
+    .cart_box_top button{
+    margin-top: 10px;
+    }
+    
     .cart{
         width: 49%;
         flex-direction: column;

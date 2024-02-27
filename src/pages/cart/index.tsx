@@ -10,8 +10,9 @@ import DeleteIcon from '@mui/icons-material/Delete';
 const CartPage = () => {
   const t = useTranslations();
   const { locale } = useRouter();
+  const router = useRouter();
   const [cartData, setCartData] = React.useState<Cart[]>([]);
-
+  
     
   useEffect(() => {
     const cardDataJSON = localStorage.getItem('cardData');
@@ -55,7 +56,8 @@ const CartPage = () => {
                   <h3>{t("Cart.1")} {cartData.length}</h3>
                   <p>{t("Cart.2")}</p>
                 </div>
-                <button>{t("Cart.3")}</button>
+                {cartData.length  !== 0 ? <button onClick={() => router.push('/order')}>{t("Cart.3")}</button>  :null}
+                
               </div>
               <div className={styles.cart_cards}>
                 {cartData.map((elem: Cart, index: number) => (
