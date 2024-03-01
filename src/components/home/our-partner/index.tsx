@@ -13,6 +13,7 @@ import { useTranslations } from 'use-intl'
 const OurPartner = () => {
   const t = useTranslations();
   const {loading , error , data} = useQuery(GET_PARTNERS)
+  
   var settings = {
     dots: false,
     infinite: true,
@@ -55,7 +56,7 @@ const OurPartner = () => {
           <Slider {...settings}>
             {data?.partners_image?.map((elem:Partners , index:number) => 
                     <div key={index} className={styles.card}>
-                    <Image src={elem.image.url} width={200} height={150} alt='our partner'/>
+                    <Image src={elem?.image?.url} width={200} height={150} alt='our partner'/>
                   </div>
             )}
       </Slider>

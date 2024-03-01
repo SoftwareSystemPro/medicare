@@ -56,7 +56,7 @@ const BlogHome = () => {
                         <div className={styles.card_blog_img}>
                         <Image key={index}  src={elem.image.url} width={324} height={221} alt="image bxlog" />
                         </div>
-                        <h3 className={styles.card_blog_h3}>{locale == 'ru'?  elem.titleRu.slice(0 , 30) : locale == 'en'?  elem.titleEn.slice(0 , 30) :locale == 'uz'?  elem.titleUz.slice(0 , 30) :elem.titleRu.slice(0 , 30)}...</h3>
+                        <h3 className={styles.card_blog_h3}>{locale == 'ru'?  elem.titleRu.slice(0 , 25) : locale == 'en'?  elem.titleEn.slice(0 , 25) :locale == 'uz'?  elem.titleUz.slice(0 , 25) :elem.titleRu.slice(0 , 25)}...</h3>
                         <span className={styles.data_button} onClick={()=>router.push(`/blog/${elem?.slug}`)}>{t('Payment.13')} <PlayArrowIcon sx={{color:'rgba(226, 49, 54, 1)' , cursor:'pointer'}}/></span>
                     </div>
                 )}
