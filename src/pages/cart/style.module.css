@@ -105,6 +105,9 @@
     .cart_section{
         margin-top: 60px;
     }
+    .cart_cards{
+        flex-wrap: wrap;
+    }
     .count button:nth-child(1){
         width: 50px;
         height: 55px;
