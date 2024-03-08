@@ -31,6 +31,8 @@
 }
 .blogs_card img{
     margin-right: 56px;
+    width: 350px;
+    height: 230px;
 }
 .data_button{
     display: flex;

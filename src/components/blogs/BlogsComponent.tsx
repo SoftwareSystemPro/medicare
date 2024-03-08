@@ -19,7 +19,7 @@ const BlogsComponent = () => {
       <div className={styles.blogs_boxs}>
         {data?.blogss?.map((elem:BlogsBoxType, index:number) => (
           <div key={index} className={styles.blogs_card}>
-            <Image src={elem?.image.url} width={383} height={247} alt="Blog Image" />
+            <Image src={elem?.image.url} width={383} height={207} alt="Blog Image" />
             <div>
             <h3>{locale == 'ru' ? elem?.titleRu : locale == 'en' ? elem?.titleEn :locale == 'uz' ? elem?.titleUz :elem?.titleRu}</h3>
             <p>{locale == 'ru' ? elem?.descriptionRu.text?.slice(0  ,300) : locale == 'en' ? elem?.descriptionEn.text?.slice(0  ,300) :  locale == 'uz' ? elem?.descriptionUz.text?.slice(0  ,300) : elem?.descriptionRu.text?.slice(0  ,300) }</p>

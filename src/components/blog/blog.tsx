@@ -24,8 +24,8 @@ const BlogComponent = ({dataBlog} : BlogProps) => {
           src={
             dataBlog?.image?.url
           }
-          width={300}
-          height={300}
+          width={1200}
+          height={400}
           alt="Image Blog"
         />
       <div  className={styles.description} dangerouslySetInnerHTML={{__html: locale == "ru" ? dataBlog?.descriptionRu?.html : locale == "en" ? dataBlog?.descriptionEn?.html : locale == "uz" ? dataBlog?.descriptionUz?.html :dataBlog?.descriptionRu?.html}}>
