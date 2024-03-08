@@ -54,6 +54,14 @@
     position: relative;
     margin-left: 20px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header_cart p {
+    color: #0B3F64;
+    margin: 0;
+    padding: 0;
 }
 .header_cart span{
     position: absolute;

@@ -36,7 +36,7 @@ const drawerWidth = '100%';
 
 export default function Navbar(props: Props) {
   const { window } = props;
-  const t = useTranslations('Home');
+  const t = useTranslations('');
   const [cardDataLength, setCardDataLength] = React.useState<number>(0);
 
   useEffect(() => {
@@ -56,19 +56,19 @@ export default function Navbar(props: Props) {
 const navItems = [
   {
       route: '/about',
-      label :t('Header.3')
+      label :t('Home.Header.3')
   },
   {
       route: '/payment',
-      label :t('Header.4')
+      label :t('Home.Header.4')
   },
   {
       route: '/blogs',
-      label :t('Header.5')
+      label :t('Home.Header.5')
   },
   {
     route: '/contact',
-    label :t('Header.6')
+    label :t('Home.Header.6')
   }
 ]
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -159,6 +159,7 @@ const navItems = [
           </Box>
             <div className={styles.header_cart} onClick={() => router.push('/cart')}>
             <LocalMallIcon sx={{color:'rgba(11, 63, 100, 1)', width:'44px', height:'40px'}}/>
+            <p>{t('Cart.0')}</p>
               {/* <span><AddIcon sx={{color:'white'}}/></span> */}
              
             </div>

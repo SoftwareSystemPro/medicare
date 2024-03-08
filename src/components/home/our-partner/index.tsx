@@ -1,9 +1,5 @@
 import React from 'react'
 import styles from "./style.module.css"
-import Our1 from "../../../../public/home/our-1.svg"
-import Our2 from "../../../../public/home/our-2.svg"
-import Our3 from "../../../../public/home/our-3.svg"
-import Our4 from "../../../../public/home/our-4.svg"
 import Slider from "react-slick"
 import Image from 'next/image'
 import { useQuery } from '@apollo/client'
@@ -18,15 +14,16 @@ const OurPartner = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 7,
+    slidesToScroll:7,
+    autoplay: true,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 4,
+          slidesToScroll: 4,
           infinite: true,
           dots: true
         }
@@ -34,16 +31,16 @@ const OurPartner = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          initialSlide: 3
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 4,
+          slidesToScroll: 4
         }
       }
     ]
@@ -56,7 +53,7 @@ const OurPartner = () => {
           <Slider {...settings}>
             {data?.partners_image?.map((elem:Partners , index:number) => 
                     <div key={index} className={styles.card}>
-                    <Image src={elem?.image?.url} width={200} height={150} alt='our partner'/>
+                    <Image src={elem?.image?.url} width={150} height={100} alt='our partner'/>
                   </div>
             )}
       </Slider>
