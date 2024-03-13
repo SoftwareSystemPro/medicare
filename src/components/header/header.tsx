@@ -139,7 +139,7 @@ const navItems = [
       
       <AppBar sx={{ backgroundColor:'white'}} component="nav">
       <Box sx={{display: { xs: 'none', md: 'block'}}}>
-      <div className={styles.Top}><Typography>{t('Header.0')}</Typography></div>
+      <div className={styles.Top}><Typography>{t('Home.Header.0')}</Typography></div>
       </Box>
           <div className='container'>
         <Toolbar>

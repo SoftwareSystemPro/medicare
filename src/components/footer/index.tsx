@@ -79,13 +79,13 @@ const Footer = () => {
         {t('Footer.1')}
         </a>
         <p className={styles.footerLeftBottom}>{t('Footer.2')}</p>
-        <a className={styles.Network} href="">
+        <a className={styles.Network} href="https://www.instagram.com/reel/Ct9UbS5NsOr/?igshid=MzRlODBiNWFlZA==" target="_blank">
           <InstagramIcon sx={{width:'30px', height:'30px'}}/>
         </a>
-        <a className={styles.Network} href="">
+        <a className={styles.Network} href="https://t.me/medicareuz" target="_blank">
         <TelegramIcon sx={{width:'30px', height:'30px'}}/>
         </a>
-        <a className={styles.Network} href="">
+        <a className={styles.Network} href="https://www.facebook.com/umidjan.kasimov?locale=ru_RU"  target="_blank">
         <FacebookIcon sx={{width:'30px', height:'30px'}}/>
         </a>
       </List>
