@@ -58,14 +58,13 @@ const OrderComponent = () => {
               </div>
               <div className={styles.input}>
                 <p>{t('Order.4')}</p>
-                <input required name='email' type="email" placeholder={t('Order.4')} />
+                <input  name='email' type="email" placeholder={t('Order.4')} />
               </div>
               <div className={styles.input}>
                 <p>{t('Order.5')}</p>
-                <textarea required name='comment' placeholder={t('Order.6')} />
+                <textarea  name='comment' placeholder={t('Order.6')} />
               </div>
               {cartData.length  !== 0 ? <button type='submit'>{t('Order.6')}</button> : null}
-            
             </form>
         </div>
         <div className={styles.order_box}>

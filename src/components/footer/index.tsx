@@ -68,13 +68,13 @@ const Footer = () => {
           <LocalPhoneIcon sx={{marginRight:"7px" ,width:"20px", height:'20px'}}/> 
           +998 (55) 901 30 22
         </a>
-        <a className={styles.headerTopPhone} href="tel:medicare@gmail.com">
+        <a className={styles.headerTopPhone} href="mailto:medicare@gmail.com">
         <MailOutlineIcon sx={{marginRight:"7px" ,width:"20px", height:'20px'}}/> 
           medicare@gmail.com
         </a>
       </List>
       <List>
-        <a className={styles.headerTopLocation} href="tel:medicare@gmail.com">
+        <a className={styles.headerTopLocation} href="mailto:medicare@gmail.com">
         <LocationOnIcon sx={{marginRight:"7px" ,width:"30px", height:'30px'}}/> 
         {t('Footer.1')}
         </a>

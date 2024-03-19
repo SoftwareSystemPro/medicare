@@ -74,6 +74,7 @@ const handleDecrement = () => {
       }
   }
 }
+console.log(dataProduct);
   return (
     <div className={styles.content}>
       <h2>{locale == "ru" ? dataProduct?.titleRu:locale == "en" ? dataProduct?.titleEn:locale == "uz" ? dataProduct?.titleUz:null}</h2>
@@ -111,8 +112,9 @@ const handleDecrement = () => {
           <span>{t('Product.6')}</span>
         </div>
       </div>
+      <h3>{t('Product.11')} : {dataProduct?.price} uzs</h3>
       <div className={styles.buttons}>
-        <a className={styles.button} href="tel:+998 (99) 701 30 22">{t('Product.7')}</a>
+        <a className={styles.button} href={dataProduct?.pdf?.url}>{t('Product.7')}</a>
         {quantity > 0 && <button className={styles.decrement} onClick={handleDecrement}>-</button>}
                 {quantity > 0 && <span className={styles.count}>{quantity}</span>}
                 {quantity > 0 && <button className={styles.icrement} onClick={HandleClickCard}>+</button>}

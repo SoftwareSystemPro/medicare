@@ -31,4 +31,9 @@ export interface ProductMoreType {
         categorySlug : string
       }
       slug:string
+      pdf: {
+        url : string
+      }
+      price : string
+      size : string
 }

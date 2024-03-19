@@ -13,15 +13,15 @@ import Seo from 'src/layout/seo/seo'
 
 const Home = () => {
   return (
-    <Seo metaTitle={'Качественные медицинские изделия от Medicare LLC'} metaDescription={'Надежные решения для вашей медицинской деятельности'} metaKeywords={'Medicare'}>
+    <Seo metaTitle={'Качественные медицинские изделия от OOO Medicare '} metaDescription={'Надежные решения для вашей медицинской деятельности'} metaKeywords={'Medicare'}>
       <Layout>
         <HomeHero/>
-        <OurPartner/>
         <AboutVideo/>
         <OurAdvantages/>
         <HomeXit/>
-        <Ask/>
+        {/* <Ask/> */}
         <FaqComponent/>
+        <OurPartner/>
         <BlogHome/>
         <Contact/>
       </Layout>

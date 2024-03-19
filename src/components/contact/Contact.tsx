@@ -45,7 +45,7 @@ const Contact = () => {
         </form>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.259786602861!2d69.19925337591627!3d41.34670677130514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8c19be1e8d4f%3A0x4c587de675bc37b3!2z0LEsIEZhcm9iaSBrbydjaGFzaSAzLCDQotC-c2hrZW50LCBUb3Noa2VudCwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1708169391041!5m2!1sru!2s"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2167.39125816255!2d69.25305108415378!3d41.15917932334521!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b50cc2b65d5%3A0x17da5455ab93fb0!2sOOO%20Medicare!5e0!3m2!1sru!2s!4v1710483273333!5m2!1sru!2s"
           loading="lazy"
         ></iframe>
       </div>

@@ -149,7 +149,7 @@ const navItems = [
             sx={{ flexGrow: 1, display: 'block' }}
           >
       <Box onClick={() => router.push(`/${locale}`)} sx={{display:'flex' , alignItems:'center'}}>
-        <Image src={Logo} alt='Logo Image'/>
+        <Link href={"/"}><Image src={Logo} alt='Logo Image'/></Link>
       </Box>
           </Typography>
           <Box  sx={{ display: { xs: 'none', md: 'block' , width:'100%' } }} >

@@ -1,6 +1,7 @@
 .about_video{
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .about_content{

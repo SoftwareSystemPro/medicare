@@ -9,8 +9,8 @@ const HomeHero = () => {
     const t = useTranslations('Home');
   return (
     <>
-      <Box width={'100%'}  height={{xs:'100vh', md:'80vh'}}>
-          <Box   sx={{ position:'relative', width:'100%' , height:{xs:'100vh', md:'80vh'} , cursor:'pointer'}}>
+      <Box width={'100%'}  height={{xs:'100vh', md:'100vh'}}>
+          <Box   sx={{ position:'relative', width:'100%' , height:{xs:'100vh', md:'100vh'} , cursor:'pointer'}}>
                 <Image src={HeroBackground} className={styles.desktop} alt={"title"} fill style={{objectFit:'cover'}} />
                 <Image src={HeroBackgroundMobile} className={styles.mobile} alt={"title"} fill style={{objectFit:'cover'}} />
         <div className='container'>

@@ -16,7 +16,7 @@ const AboutContentTop = () => {
             <Image src={AboutContentImage} alt='About iMAGE'/>
           </div>
           <div className={styles.about_top_content_left}>
-              <h2>Medicare LLC</h2>
+              <h2>OOO Medicare </h2>
               <h3>{t('About.0')}</h3>
               <p>{t('About.1')}</p>
           </div>

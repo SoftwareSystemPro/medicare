@@ -9,14 +9,18 @@ query ProductCard($categorySlug: String) {
     image1 {
       url
     }
-    slug
     category {
       categoryEn
       categoryRu
       categorySlug
       categoryUz
     }
+    pdf {
+      url
+    }
     slug
+    price
+    size
   }
 }
 `

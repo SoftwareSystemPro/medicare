@@ -33,6 +33,7 @@
     margin-right: 56px;
     width: 350px;
     height: 230px;
+    object-fit: cover;
 }
 .data_button{
     display: flex;

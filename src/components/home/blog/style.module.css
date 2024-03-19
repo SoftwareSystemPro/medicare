@@ -34,8 +34,9 @@
 .cardBlog{
     background-color: white;
     border:  3px solid #0B3F64;
-    width: 95%;
-    height: 360px;
+    width: 95% !important;
+    padding-bottom: 20px;
+    border-radius: 10px;
 }
 .card_blog_img img{
     position: relative;
@@ -44,6 +45,7 @@
 .card_blog_img img{
     width: 303px;
     height: 232px;
+    object-fit: cover;
 }
 .card_blog_h3{
     margin: 0;

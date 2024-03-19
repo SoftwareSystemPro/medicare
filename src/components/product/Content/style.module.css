@@ -16,6 +16,12 @@
     justify-content: space-between;
     margin-top: 40px;
 }
+.content h3{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 51px;
+    color: rgba(11, 63, 100, 1);
+}
 .product_network_card{
     display: flex;
     align-items: center;
@@ -124,6 +130,12 @@
     }
 }
 @media only screen and(max-width:694px) {
+    .content h3{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 51px;
+        color: rgba(11, 63, 100, 1);
+    }
     .icrement{
         width: 30px;
         height: 28px;
@@ -187,7 +199,7 @@
         margin-top: 50px;
     }
     .button{
-     
+        cursor: pointer;
         font-weight: 700;
         font-size: 14px;
         line-height: 24.5px;

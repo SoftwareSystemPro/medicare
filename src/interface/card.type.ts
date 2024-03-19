@@ -12,4 +12,5 @@ export interface CardProductType {
         categoryUz : string
       }
       slug: string
+ 
 }

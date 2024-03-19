@@ -16,13 +16,13 @@
       "2": "We are in the social networks"
     },
     "HomeHero": {
-      "0": "High-quality medical products from Medicare LLC",
+      "0": "High-quality medical products from OOO Medicare ",
       "1": "Reliable solutions for your medical activity",
       "2": "Our partners"
     },
     "AboutVideo": {
-      "0": "Medicare LLC",
-      "1": "Medicare LLC is a company created with the aim of providing medical institutions and healthcare professionals with reliable and high-quality consumables.\n\n Since our foundation in 2018, we have been striving to provide our customers with products that meet the highest quality standards.\n\n We are also currently considering the possibility of starting wholesale imports of adhesive bandages, expanding our product line to meet the growing needs of our customers for the highest quality medical products."
+      "0": "OOO Medicare ",
+      "1": "OOO Medicare  is a company created with the aim of providing medical institutions and healthcare professionals with reliable and high-quality consumables.\n\n Since our foundation in 2018, we have been striving to provide our customers with products that meet the highest quality standards.\n\n We are also currently considering the possibility of starting wholesale imports of adhesive bandages, expanding our product line to meet the growing needs of our customers for the highest quality medical products."
     },
     "Xit": {
       "0": "Sales hits"
@@ -82,11 +82,12 @@
     "7": "Details",
     "8": "Add to cart",
     "9": "Description",
-    "10": "Similar products"
+    "10": "Similar products",
+    "11" : "Price"
   },
   "About" : {
     "0": "Your reliable partner in healthcare",
-    "1": "At Medicare LLC, we pride ourselves on providing high-quality medical products that are a reliable standard in the healthcare industry. With our rich experience and unique approach to quality, we strive to provide our customers with everything they need for effective and safe medical practice.The focus of our philosophy is the pursuit of innovation and continuous improvement. We are constantly researching new technologies and developments in order to offer our customers the most advanced and effective solutions. Our goal is not just to follow trends, but to set them, providing our customers with access to the most advanced products.",
+    "1": "At OOO Medicare , we pride ourselves on providing high-quality medical products that are a reliable standard in the healthcare industry. With our rich experience and unique approach to quality, we strive to provide our customers with everything they need for effective and safe medical practice.The focus of our philosophy is the pursuit of innovation and continuous improvement. We are constantly researching new technologies and developments in order to offer our customers the most advanced and effective solutions. Our goal is not just to follow trends, but to set them, providing our customers with access to the most advanced products.",
     "2": "We believe that everyone deserves the highest level of care and safety in the medical field. Our mission is to make medical practice more efficient, safe and accessible by offering a wide range of high-quality products and providing outstanding service.",
     "3": "We value our customers and strive to build long-term partnerships based on trust and mutual respect.",
     "4": "Strict quality control",
@@ -98,7 +99,7 @@
     "10": "A wide range of products",
     "11": "We offer a wide range of medical supplies, allowing clinics and hospitals to get everything they need from one a reliable supplier.",
     "12": "Fast and reliable delivery",
-    "13": "Medicare LLC ensures prompt delivery of products, reducing waiting times and ensuring the constant availability of important medical supplies.",
+    "13": "OOO Medicare  ensures prompt delivery of products, reducing waiting times and ensuring the constant availability of important medical supplies.",
     "14": "Our certificates"
   },
   "Payment" : {

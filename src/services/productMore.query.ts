@@ -35,6 +35,11 @@ query ProductMore($slug: String) {
         categorySlug
       }
       slug
+      pdf {
+        url
+      }
+      price
+      size
     }
   }
   

@@ -38,7 +38,7 @@ const CatalogFilter = () => {
                   }}
                   onClick={()=>router.push(`/catalog/${elem.categorySlug}`)}
                 >
-                  {locale == "ru" ? elem.categoryRu.slice(0 ,20): locale == "en" ? elem.categoryEn.slice(0 ,20):locale == "uz" ? elem.categoryUz.slice(0 ,20):elem.categoryRu}...
+                  {locale == "ru" ? elem.categoryRu: locale == "en" ? elem.categoryEn:locale == "uz" ? elem.categoryUz:elem.categoryRu}
                   <ArrowForwardIosIcon />
                 </Button>
                 <Divider sx={{ backgroundColor: "gray" }} />

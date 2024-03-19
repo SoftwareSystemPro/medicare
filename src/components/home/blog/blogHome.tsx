@@ -54,9 +54,9 @@ const BlogHome = () => {
                 {data?.blogss?.map((elem:CardBlog,  index:number) =>
                   <div  key={index} className={styles.cardBlog}>
                         <div className={styles.card_blog_img}>
-                        <Image key={index}  src={elem.image.url} width={324} height={221} alt="image bxlog" />
+                        <Image key={index}  src={elem.image.url} width={624} height={321} alt="image bxlog" />
                         </div>
-                        <h3 className={styles.card_blog_h3}>{locale == 'ru'?  elem.titleRu.slice(0 , 25) : locale == 'en'?  elem.titleEn.slice(0 , 25) :locale == 'uz'?  elem.titleUz.slice(0 , 25) :elem.titleRu.slice(0 , 25)}...</h3>
+                        <h3 className={styles.card_blog_h3}>{locale == 'ru'?  elem.titleRu : locale == 'en'?  elem.titleEn :locale == 'uz'?  elem.titleUz :elem.titleRu}...</h3>
                         <span className={styles.data_button} onClick={()=>router.push(`/blog/${elem?.slug}`)}>{t('Payment.13')} <PlayArrowIcon sx={{color:'rgba(226, 49, 54, 1)' , cursor:'pointer'}}/></span>
                     </div>
                 )}

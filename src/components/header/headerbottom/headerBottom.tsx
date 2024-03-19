@@ -13,8 +13,17 @@ const HeaderBottom = ({ navItems }: HeaderBottomProps) => {
   };
   return (
     <div className={styles.headerBottom}>
+      {navItems.slice(0 , 1).map((item , index) => (
+        <button
+          key={index}
+          className={styles.headerBottomButton}
+          onClick={() => router.push(item.route)}
+        >
+          {item.label}
+        </button>
+      ))}
       <DropDown handleDrawerClose={handleDrawerClose}/>
-      {navItems.map((item , index) => (
+      {navItems.slice(1).map((item , index) => (
         <button
           key={index}
           className={styles.headerBottomButton}
