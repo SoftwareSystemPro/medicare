@@ -35,6 +35,7 @@ const CatalogFilter = () => {
                     paddingTop:'20px',
                     paddingBottom:'15px',
                     color: "#000000",
+                    textAlign:'start'
                   }}
                   onClick={()=>router.push(`/catalog/${elem.categorySlug}`)}
                 >

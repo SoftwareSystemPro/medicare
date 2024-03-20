@@ -12,6 +12,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import Link from "next/link";
 const Footer = () => {
   const router = useRouter();
   const {locale} = router
@@ -91,7 +92,7 @@ const Footer = () => {
       </List>
       </div>
       <div className={styles.Company}>
-          <h3>{t('Footer.0')}</h3>
+          <Link href={"https://softwaresystem.uz/"} target="_blank"><h3>{t('Footer.0')}</h3></Link>
       </div>
         </div>
     </Box>

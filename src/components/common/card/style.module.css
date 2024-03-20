@@ -19,7 +19,6 @@
 .Card_imgs span{
     position: absolute;
     left: 0px;
-    bottom: 0px;
     background: linear-gradient(270deg, rgba(11, 63, 100, 0.15) 0%, rgba(11, 63, 100, 0.9) 100%);
     color: white;
     font-weight: 700;
