@@ -5,8 +5,8 @@ import { useTranslations } from "next-intl";
 import Layout from "src/layout/layout";
 import { Cart } from "src/interface/cart.type";
 import Image from "next/image";
+import CloseIcon from '@mui/icons-material/Close';
 import { useRouter } from "next/router";
-import DeleteIcon from '@mui/icons-material/Delete';
 const CartPage = () => {
   const t = useTranslations();
   const { locale } = useRouter();
@@ -43,6 +43,12 @@ const CartPage = () => {
       localStorage.setItem("cardData", JSON.stringify(updatedCartData));
     }
   };
+  const handleDeleteItem = (index: number) => {
+    const updatedCartData = [...cartData];
+    updatedCartData.splice(index, 1); // Remove the item from the array
+    setCartData(updatedCartData);
+    localStorage.setItem("cardData", JSON.stringify(updatedCartData));
+  };
 
   return (
     <Layout>
@@ -60,30 +66,41 @@ const CartPage = () => {
                 
               </div>
               <div className={styles.cart_cards}>
-                {cartData.map((elem: Cart, index: number) => (
-                  <div key={index} className={styles.cart}>
-                    <Image
-                      src={elem.image1.url}
-                      width={300}
-                      height={200}
-                      alt="category"
-                    />
-                    <h4>
-                      {locale == "ru"
-                        ? elem.titleRu
-                        : locale == "en"
-                        ? elem.titleEn
-                        : locale == "uz"
-                        ? elem.titleUz
-                        : elem.titleRu}
-                    </h4>
-                    <div className={styles.count}>
-                    <button onClick={() => handleDecrement(index)}>{elem.quantity == 1 ? <DeleteIcon/> : "-"}</button>
-                    <span>{elem.quantity}</span>
-                    <button onClick={() => handleIncrement(index)}>+</button>
-                    </div>
-                  </div>
-                ))}
+                {cartData.map((elem: Cart, index: number) => {
+  
+    const quantitiesWithNonZeroValues = Object.entries(elem?.quantities)
+      .filter(([_, value]) => value !== 0)
+      .map(([key, value]) => ({ size: key, quantity: value }));
+
+  return (
+    <div key={index} className={styles.cart}>
+      <Image
+        src={elem.image1.url}
+        width={300}
+        height={200}
+        alt="category"
+      />
+      <h4>
+        {locale == "ru"
+          ? elem.titleRu
+          : locale == "en"
+          ? elem.titleEn
+          : locale == "uz"
+          ? elem.titleUz
+          : elem.titleRu}
+                <ul className={styles.size_count_item}>
+        {quantitiesWithNonZeroValues.map(elem => 
+        <li className={styles.size_count_list}><span>{t('Cart.7')}: {elem.size}</span> <span>  {elem.quantity} шт</span></li>
+          )}
+      </ul>
+      </h4>
+
+      <button className={styles.delete_button} onClick={() => handleDeleteItem(index)}>
+                    <CloseIcon />
+                  </button>
+    </div>
+  );
+})}
               </div>
             </div>
           </div>

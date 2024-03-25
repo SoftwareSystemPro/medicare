@@ -83,7 +83,8 @@
     "8": "Savatga Qo'shish",
     "9": "Tavsif",
     "10": "O'xshash mahsulotlar",
-    "11" : "Narx"
+    "11" : "Narx",
+    "12" : "Mahsulot savatga qo'shildi"
   },
   "About" : {
     "0": "Sizning ishonchli sog'liqni saqlash hamkoringiz",
@@ -129,7 +130,8 @@
     "3": "Buyurtma berish",
     "4": "Fotosurat",
     "5": "Ism",
-    "6": "Miqdor:"
+    "6": "Miqdor:",
+    "7" : "O'lcham"
   },
   "Order":{
     "0":"Buyurtma berish",

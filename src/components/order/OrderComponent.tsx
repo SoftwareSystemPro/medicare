@@ -23,9 +23,16 @@ const OrderComponent = () => {
     }, []);
     const HandleSubmit = async (body:any) => {
       body.preventDefault()
-      const info = `Имя : ${body.target.name.value} %0AНомер телефона: ${body.target.phone.value} %0Aemail: ${body.target.email.value} %0Aкомментарий: ${body.target.comment.value} %0A%0AПродукт :  ${cartData.map(elem => 
-          `${elem.titleRu}  ${elem.quantity} шт %0A ___________________________________ %0A`
-        )}`
+      const info = `Имя : ${body.target.name.value} %0AНомер телефона: ${body.target.phone.value} %0Aemail: ${body.target.email.value} %0Aкомментарий: ${body.target.comment.value} %0A%0AПродукт :  ${cartData.map(elem =>
+        
+        { 
+          const quantitiesWithNonZeroValues = Object.entries(elem?.quantities)
+          .filter(([_, value]) => value !== 0)
+          .map(([key, value]) => ({ size: key, quantity: value }));
+          return(
+            `${elem.titleRu}  Размер: ${quantitiesWithNonZeroValues.map(elem => `${elem.size} = ${elem.quantity}шт`)}   %0A ___________________________________ %0A`
+          )
+      })}`
       await fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${info}&parse_mode=html`)
       body.target.name.value = null
       body.target.phone.value = null
@@ -69,7 +76,11 @@ const OrderComponent = () => {
         </div>
         <div className={styles.order_box}>
           <h3>{t('Order.8')}</h3>
-        {cartData.map((elem , index) => 
+        {cartData.map((elem , index) => {
+             const quantitiesWithNonZeroValues = Object.entries(elem?.quantities)
+             .filter(([_, value]) => value !== 0)
+             .map(([key, value]) => ({ size: key, quantity: value }));
+          return(
                             <div key={index} className={styles.cart}>
                             <Image
                               src={elem.image1.url}
@@ -87,10 +98,14 @@ const OrderComponent = () => {
                                 ? elem.titleUz
                                 : elem.titleRu}
                             </h4>
-                            <span>{elem.quantity} {t('Order.9')}</span>
+                            <ul className={styles.size_count_item}>
+        {quantitiesWithNonZeroValues.map(elem => 
+                <li className={styles.size_count_list}><span>{t('Cart.7')}: {elem.size}</span> <span>  {elem.quantity} шт</span></li>
+                  )}
+              </ul>
                       </div>
                           </div>
-        )}
+       )} )}
         </div>
       </div>
       </div>

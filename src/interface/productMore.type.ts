@@ -35,5 +35,9 @@ export interface ProductMoreType {
         url : string
       }
       price : string
-      size : string
+      size : [
+        {
+          size : string
+        }
+      ]
 }

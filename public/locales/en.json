@@ -83,7 +83,9 @@
     "8": "Add to cart",
     "9": "Description",
     "10": "Similar products",
-    "11" : "Price"
+    "11" : "Price",
+    "12" : "Product added to cart"
+
   },
   "About" : {
     "0": "Your reliable partner in healthcare",

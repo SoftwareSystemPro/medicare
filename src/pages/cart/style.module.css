@@ -7,9 +7,35 @@
     font-size: 40px;
     font-weight: 700;
 }
+.size_count_item{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+.size_count_item li span{
+    font-size: 16px;
+    font-weight: 600;
+}
+.size_count_list{
+    border-bottom: 1px solid rgb(176, 176, 176);
+    padding-bottom: 5px;
+}
 .cart_box{
     background-color: white;
     padding-bottom: 40px;
+}
+.delete_button{
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    border: 1px solid transparent;
+    color: red;
+    display: flex;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 10px;
+    cursor: pointer;
 }
 .cart_box_top{
     display: flex;

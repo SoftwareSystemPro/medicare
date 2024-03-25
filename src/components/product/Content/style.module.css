@@ -45,7 +45,6 @@
     margin-right: 60px;
 }
 .button_active{
- 
     font-weight: 700;
     font-size: 18px;
     line-height: 24.5px;
@@ -55,6 +54,7 @@
     padding-left: 31px;
     padding-right: 31px;
     background-color: rgba(226, 49, 54, 1);
+    cursor: pointer;
     border: 1px solid rgba(226, 49, 54, 1);    
 }
 .product_network_card span{
@@ -117,24 +117,100 @@
     font-size: 25px;
 }
 .count{
-    margin-top: 10px;
     color: black;
     font-size: 20px;
     font-weight: 600;
     margin-left: 10px;
     margin-right: 10px;
 }
+.icrement_buttons{
+    border-bottom: 1px solid rgb(173, 173, 173);
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.button_size{
+    background-color: transparent;
+    border: transparent;
+    font-size: 20px;
+}
+.modal_Success_no_active{
+    position: fixed;
+    z-index: 10000;
+    width: 50%;
+    margin-left: -20%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px;
+    border-radius: 5px;
+    justify-content: center;
+    transition: 0.5s;
+    top: -120px;
+}
+.modal_Success{
+    position: fixed;
+    z-index: 10000;
+    width: 50%;
+    margin-left: -20%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px;
+    border-radius: 5px;
+    justify-content: center;
+    transition: 0.5s;
+    top: 20px;
+}
 @media only screen and (max-width:900px) {
     .content h2{
         margin-top: 40px;
     }
 }
-@media only screen and(max-width:694px) {
+@media only screen and (max-width:694px) {
     .content h3{
         font-size: 24px;
         font-weight: 700;
         line-height: 51px;
         color: rgba(11, 63, 100, 1);
+    }
+    .modal_Success_no_active{
+        position: fixed;
+        z-index: 10000;
+        width: 50%;
+        margin-left: 0%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        box-shadow: 0px 0px 5px 1px;
+        border-radius: 5px;
+        justify-content: center;
+        transition: 0.5s;
+        top: -120px;
+    }
+    .modal_Success{
+        position: fixed;
+        z-index: 10000;
+        width: 90%;
+        margin-left: 0%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        box-shadow: 0px 0px 5px 1px;
+        border-radius: 5px;
+        justify-content: center;
+        transition: 0.5s;
+        top: 20px;
     }
     .icrement{
         width: 30px;
@@ -150,7 +226,7 @@
         font-size: 20px;
     }
     .decrement{
-        width: 40px;
+        width: 30px;
         height: 28px;
         border-radius: 50%;
         display: flex;
@@ -161,6 +237,22 @@
         color: red;
         border: 2px solid red;
         font-size: 20px;
+    }
+    .modal_Success_no_active{
+        position: fixed;
+        z-index: 10000;
+        width: 100%;
+        margin-left: 5%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        box-shadow: 0px 0px 5px 1px;
+        border-radius: 5px;
+        justify-content: center;
+        transition: 0.5s;
+        top: -150px;
     }
 }
 @media only screen and (max-width:515px) {
@@ -214,7 +306,6 @@
         margin-right: 20px;
     }
     .button_active{
-     
         font-weight: 700;
         font-size: 14px;
         line-height: 24.5px;
