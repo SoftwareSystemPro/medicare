@@ -99,8 +99,8 @@ const OrderComponent = () => {
                                 : elem.titleRu}
                             </h4>
                             <ul className={styles.size_count_item}>
-        {quantitiesWithNonZeroValues.map(elem => 
-                <li className={styles.size_count_list}><span>{t('Cart.7')}: {elem.size}</span> <span>  {elem.quantity} шт</span></li>
+        {quantitiesWithNonZeroValues.map((elem , index) => 
+                <li key={index} className={styles.size_count_list}><span>{t('Cart.7')}: {elem.size}</span> <span>  {elem.quantity} шт</span></li>
                   )}
               </ul>
                       </div>
