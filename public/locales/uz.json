@@ -5,36 +5,36 @@
       "0": "O'zbekistonning istalgan shahriga yetkazib berish!",
       "1": "Qayta qo'ng'iroq",
       "2": "Katalog",
-      "3": "Biz haqimizda",
+      "3": "Biz haqmizda",
       "4": "Hamkorlik shartlari",
       "5": "Maqolalar",
       "6": "Kontaktlar"
     },
     "Footer":{
       "0": " © Software System Pro jamoasi tomonidan ishlab chiqilgan",
-      "1": "Toshkent viloyati, Quyi chirchiq tumani, Surum M.F.Y., Tabarruk ko'chasi, 37a-uy",
+      "1": "Toshkent viloyati, Quyi Chirchiq tumani, Surum M.F.Y., Tabarruk ko'chasi, 37a-uy",
       "2": "Biz ijtimoiy tarmoqlarda"
     },
     "HomeHero": {
       "0": "Medicare MChJdan sifatli tibbiy mahsulotlar",
-      "1": "Tibbiy faoliyatingiz uchun ishonchli echimlar",
+      "1": "Tibbiy faoliyatingiz uchun ishonchli yechimlar",
       "2": "Bizning sheriklarimiz"
     },
     "AboutVideo": {
-      "0": "OOO Medicare ",
-      "1": "Medicare MCHJ - bu sog'liqni saqlash muassasalari va sog'liqni saqlash mutaxassislarini ishonchli va yuqori sifatli sarf materiallari bilan ta'minlash maqsadida tashkil etilgan kompaniya. \n\n 2018 yilda tashkil etilganidan beri biz mijozlarimizni eng yuqori sifat standartlariga javob beradigan mahsulotlar bilan ta'minlashga intilamiz.\n\n Ayni paytda biz mijozlarimizning eng yuqori sifatli tibbiy mahsulotlarga bo'lgan o'sib borayotgan ehtiyojlarini qondirish uchun mahsulot qatorimizni kengaytirib, yopishtiruvchi bandajlarni ulgurji import qilishni boshlashni ham ko'rib chiqmoqdamiz."
+      "0": "MCHJ Medicare ",
+      "1": "Medicare MCHJ - bu sog'liqni saqlash muassasalari va sog'liqni saqlash mutaxassislarini ishonchli va yuqori sifatli sarf materiallari bilan ta'minlash maqsadida tashkil etilgan kompaniya. \n\n 2018 yilda tashkil etilganidan beri biz mijozlarimizni eng yuqori sifat standartlariga javob beradigan mahsulotlar bilan ta'minlashga intilamiz.\n\n Ayni paytda biz mijozlarimizning eng yuqori sifatli tibbiy mahsulotlarga bo'lgan o'sib borayotgan ehtiyojlarini qondirish uchun mahsulot qatorimizni kengaytirib, yopishuvchi bandajlarni ulgurji import qilishni boshlashni ham ko'rib chiqmoqdamiz."
     },
     "Xit": {
       "0": "Ommabop "
     },
     "OurAdvanges": {
       "0": "Bizning afzalliklarimiz",
-      "1": "Battiq sifat nazorati",
+      "1": "Yuqori sifat nazorati",
       "2": "Mahsulotlarning keng assortimenti",
       "3": "Professional xizmat",
       "4": "Individual yondashuv",
-      "5": "Innovatsion echimlar",
-      "6": "Tez va ishonchli etkazib berish"
+      "5": "Innovatsion yechimlar",
+      "6": "Tez va ishonchli yetkazib berish"
     },
     "Ask" : {
       "0": "Bizga savol bering",
@@ -47,7 +47,7 @@
       "0": "Tez-tez so'raladigan savollar",
       "1": "Siz qanday tibbiy sarf materiallarini taklif qilasiz?",
       "2": "- Biz shpritslar, tomchilar, bintlar, jarrohlik qo'lqoplari, tikuvlar va boshqa yuqori sifatli bir martalik materiallarni o'z ichiga olgan keng turdagi tibbiy sarf materiallarini taklif etamiz.",
-      "3": "To'lov va etkazib berish shartlari qanday ?",
+      "3": "To'lov va yetkazib berish shartlari qanday ?",
       "4": "- Toshkent shahri doirasida yetkazib berish bepul. Minimal buyurtma 300 000 so'mni tashkil etadi.",
       "5": "Qanday qilib mahsulot mavjudligini bilib, buyurtma berishim mumkin?",
       "6": "- Mahsulot mavjudligini veb-saytimizda qayta qo'ng'iroq qilish yoki saytda ko'rsatilgan raqamga qo'ng'iroq qilish orqali bilib olishingiz mumkin.",
@@ -67,7 +67,7 @@
     "1": "Raqamingizni qoldiring va biz sizga qo'ng'iroq qilamiz"
   },
   "Card": {
-    "0": "Ko'proq",
+    "0": "Batafsil",
     "1": "Savatga",
     "2": "Kategoriyalar"
   },
@@ -77,7 +77,7 @@
     "2": "To'lov:",
     "3": "Click , Payme kartasi bilan to'lash",
     "4": "Sifat kafolati",
-    "5": "Operatsion etkazib berish",
+    "5": "Operatsion yetkazib berish",
     "6": "Barcha to'lov usullari",
     "7": "Ko'proq",
     "8": "Savatga Qo'shish",
@@ -88,7 +88,7 @@
   },
   "About" : {
     "0": "Sizning ishonchli sog'liqni saqlash hamkoringiz",
-    "1": "Biz Medicare MChJda sog'liqni saqlash sohasida ishonchli standart bo'lgan yuqori sifatli tibbiy mahsulotlarni taqdim etishdan faxrlanamiz. Bizning boy tajribamiz va sifatga noyob yondashuvimiz bilan biz mijozlarimizni samarali va xavfsiz tibbiy amaliyot uchun zarur bo'lgan barcha narsalar bilan ta'minlashga intilamiz.\n\n Bizning falsafamizning markazida innovatsiyalar va doimiy takomillashtirishga intilish yotadi. Biz mijozlarimizga eng ilg'or va samarali echimlarni taklif qilish uchun doimiy ravishda yangi texnologiyalar va ishlanmalarni o'rganamiz. Bizning maqsadimiz nafaqat tendentsiyalarga rioya qilish, balki mijozlarimizga eng ilg'or mahsulotlarga kirishni ta'minlash orqali ularni o'rnatishdir.",
+    "1": "Biz Medicare MChJda sog'liqni saqlash sohasida ishonchli standart bo'lgan yuqori sifatli tibbiy mahsulotlarni taqdim etishdan faxrlanamiz. Bizning boy tajribamiz va sifatga noyob yondashuvimiz bilan biz mijozlarimizni samarali va xavfsiz tibbiy amaliyot uchun zarur bo'lgan barcha narsalar bilan ta'minlashga intilamiz.\n\n Bizning falsafamizning markazida innovatsiyalar va doimiy takomillashtirishga intilish yotadi. Biz mijozlarimizga eng ilg'or va samarali yechimlarni taklif qilish uchun doimiy ravishda yangi texnologiyalar va ishlanmalarni o'rganamiz. Bizning maqsadimiz nafaqat tendentsiyalarga rioya qilish, balki mijozlarimizga eng ilg'or mahsulotlarga kirishni ta'minlash orqali ularni o'rnatishdir.",
     "2": "Biz har bir inson tibbiyot sohasida eng yuqori darajadagi g'amxo'rlik va xavfsizlikka loyiq ekanligiga ishonamiz. Bizning vazifamiz yuqori sifatli mahsulotlarning keng assortimentini taklif qilish va ajoyib xizmat ko'rsatish orqali tibbiy amaliyotni yanada samarali, xavfsiz va arzonroq qilishdir.",
     "3": "Biz mijozlarimizni qadrlaymiz va ishonch va o'zaro hurmat asosida uzoq muddatli sheriklik aloqalarini o'rnatishga intilamiz.",
     "4": "Qattiq sifat nazorati",
@@ -96,15 +96,15 @@
     "6": "Professional xizmat",
     "7": "Bizning jamoamiz mahsulotlarimiz va xizmatlarimiz bilan bog'liq barcha masalalar bo'yicha yuqori malakali yordam va maslahat berishga tayyor.",
     "8": "Individual yondashuv",
-    "9": "Bizning kompaniyamiz har bir mijozning individual ehtiyojlarini qadrlaydi va biz ularning noyob talablari va byudjetiga eng mos keladigan echimlarni taklif qilishga tayyormiz.",
+    "9": "Bizning kompaniyamiz har bir mijozning individual ehtiyojlarini qadrlaydi va biz ularning noyob talablari va byudjetiga eng mos keladigan yechimlarni taklif qilishga tayyormiz.",
     "10": "Mahsulotlarning keng assortimenti" ,
-    "11": "Biz klinikalar va shifoxonalarga bitta ishonchli etkazib beruvchidan kerakli narsalarni olish imkoniyatini beradigan turli xil tibbiy sarf materiallarini taklif etamiz.",
-    "12": "Tez va ishonchli etkazib berish",
-    "13": "Medicare MCHJ mahsulotlarni tezkor etkazib berishni ta'minlaydi, kutish vaqtini qisqartiradi va muhim tibbiy sarf materiallarining doimiy mavjudligini ta'minlaydi.",
+    "11": "Biz klinikalar va shifoxonalarga bitta ishonchli yetkazib beruvchidan kerakli narsalarni olish imkoniyatini beradigan turli xil tibbiy sarf materiallarini taklif etamiz.",
+    "12": "Tez va ishonchli yetkazib berish",
+    "13": "Medicare MCHJ mahsulotlarni tezkor yetkazib berishni ta'minlaydi, kutish vaqtini qisqartiradi va muhim tibbiy sarf materiallarining doimiy mavjudligini ta'minlaydi.",
     "14": "Bizning sertifikatlarimiz"
   },
   "Payment" : {
-    "0": "To'lov va etkazib berish",
+    "0": "To'lov va yetkazib berish",
     "1": "To'lov",
     "2": "Joriy hisob raqamiga o'tkazish",
     "3": "Tovarlarni bank o'tkazmasi orqali to'lash",
@@ -113,14 +113,14 @@
     "6": "Tovarni Toshkent shahrida olgandan keyin naqd pul bilan to 'lash",
     "7": "Yetkazib berish",
     "8": "Toshkentda yetkazib berish",
-    "9": "Manzilli etkazib berish: \n\n Etkazib berish muddati 1-3 kun. \n\n Etkazib berish narxi - \bepul etkazib berish, buyurtma miqdori 300000 so'mdan. \n\n Buyurtmani naqd pul yoki bank kartasi bilan to'lash mumkin.",
+    "9": "Manzilli yetkazib berish: \n\n Yetkazib berish muddati 1-3 kun. \n\n Yetkazib berish narxi - \bepul yetkazib berish, buyurtma miqdori 300000 so'mdan. \n\n Buyurtmani naqd pul yoki bank kartasi bilan to'lash mumkin.",
     "10": "mintaqalarga etkazib berish",
-    "11": "Pochta xizmati orqali etkazib berish. \n\n Yetkazib berish muddati 2-5 kun. \n\n Etkazib berish narxi-pochta xizmati tariflari bo'yicha. \n\n Buyurtmani joriy hisob raqamiga o'tkazish yoki to'lov tizimlaridan foydalangan holda onlayn tarzda to'lash mumkin.",
+    "11": "Pochta xizmati orqali yetkazib berish. \n\n Yetkazib berish muddati 2-5 kun. \n\n Yetkazib berish narxi-pochta xizmati tariflari bo'yicha. \n\n Buyurtmani joriy hisob raqamiga o'tkazish yoki to'lov tizimlaridan foydalangan holda onlayn tarzda to'lash mumkin.",
     "12": "Maqolalar",
-    "13": "O'qing"
+    "13": "Batafsil"
   },
   "Blog" :{ 
-    "0": "Maqolani bolishish",
+    "0": "Maqolani bo'lishish",
     "1": "Aktual mahsulotlar"
   },
   "Cart" : {
