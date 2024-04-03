@@ -31,6 +31,11 @@
 }
 .about_video_content{
     width: 50%;
+    height: 100%;
+}
+.about_video_content img{
+    width: 100%;
+    height: 100%;
 }
 .about_video_content iframe{
     height: 520px;
@@ -39,6 +44,16 @@
 @media only screen and (max-width:900px) {
     .about_video{
         flex-direction: column;
+    }
+    .about_video_content{
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+    }
+    .about_video_content img{
+        width: 100%;
+        height: fit-content;
+        margin: 0 auto;
     }
     .about_content{
         width: 100%;

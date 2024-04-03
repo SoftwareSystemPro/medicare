@@ -16,13 +16,13 @@
       "2": "Biz ijtimoiy tarmoqlarda"
     },
     "HomeHero": {
-      "0": "Medicare MChJdan sifatli tibbiy mahsulotlar",
+      "0": "MChJ 'Medicare'dan sifatli tibbiy mahsulotlar",
       "1": "Tibbiy faoliyatingiz uchun ishonchli yechimlar",
       "2": "Bizning sheriklarimiz"
     },
     "AboutVideo": {
-      "0": "MCHJ Medicare ",
-      "1": "Medicare MCHJ - bu sog'liqni saqlash muassasalari va sog'liqni saqlash mutaxassislarini ishonchli va yuqori sifatli sarf materiallari bilan ta'minlash maqsadida tashkil etilgan kompaniya. \n\n 2018 yilda tashkil etilganidan beri biz mijozlarimizni eng yuqori sifat standartlariga javob beradigan mahsulotlar bilan ta'minlashga intilamiz.\n\n Ayni paytda biz mijozlarimizning eng yuqori sifatli tibbiy mahsulotlarga bo'lgan o'sib borayotgan ehtiyojlarini qondirish uchun mahsulot qatorimizni kengaytirib, yopishuvchi bandajlarni ulgurji import qilishni boshlashni ham ko'rib chiqmoqdamiz."
+      "0": "MCHJ 'Medicare' ",
+      "1": "MCHJ 'Medicare' - bu sog'liqni saqlash muassasalari va sog'liqni saqlash mutaxassislarini ishonchli va yuqori sifatli sarf materiallari bilan ta'minlash maqsadida tashkil etilgan kompaniya. \n\n 2018 yilda tashkil etilganidan beri biz mijozlarimizni eng yuqori sifat standartlariga javob beradigan mahsulotlar bilan ta'minlashga intilamiz.\n\n Ayni paytda biz mijozlarimizning eng yuqori sifatli tibbiy mahsulotlarga bo'lgan o'sib borayotgan ehtiyojlarini qondirish uchun mahsulot qatorimizni kengaytirib, yopishuvchi bandajlarni ulgurji import qilishni boshlashni ham ko'rib chiqmoqdamiz."
     },
     "Xit": {
       "0": "Ommabop "
@@ -87,8 +87,8 @@
     "12" : "Mahsulot savatga qo'shildi"
   },
   "About" : {
-    "0": "Sizning ishonchli sog'liqni saqlash hamkoringiz",
-    "1": "Biz Medicare MChJda sog'liqni saqlash sohasida ishonchli standart bo'lgan yuqori sifatli tibbiy mahsulotlarni taqdim etishdan faxrlanamiz. Bizning boy tajribamiz va sifatga noyob yondashuvimiz bilan biz mijozlarimizni samarali va xavfsiz tibbiy amaliyot uchun zarur bo'lgan barcha narsalar bilan ta'minlashga intilamiz.\n\n Bizning falsafamizning markazida innovatsiyalar va doimiy takomillashtirishga intilish yotadi. Biz mijozlarimizga eng ilg'or va samarali yechimlarni taklif qilish uchun doimiy ravishda yangi texnologiyalar va ishlanmalarni o'rganamiz. Bizning maqsadimiz nafaqat tendentsiyalarga rioya qilish, balki mijozlarimizga eng ilg'or mahsulotlarga kirishni ta'minlash orqali ularni o'rnatishdir.",
+    "0": "Sizning ishonchli hamkoringiz",
+    "1": "Biz MChJ 'Medicare' da sog'liqni saqlash sohasida ishonchli standart bo'lgan yuqori sifatli tibbiy mahsulotlarni taqdim etishdan faxrlanamiz. Bizning boy tajribamiz va sifatga noyob yondashuvimiz bilan biz mijozlarimizni samarali va xavfsiz tibbiy amaliyot uchun zarur bo'lgan barcha narsalar bilan ta'minlashga intilamiz.\n\n Bizning falsafamizning markazida innovatsiyalar va doimiy takomillashtirishga intilish yotadi. Biz mijozlarimizga eng ilg'or va samarali yechimlarni taklif qilish uchun doimiy ravishda yangi texnologiyalar va ishlanmalarni o'rganamiz. Bizning maqsadimiz nafaqat tendentsiyalarga rioya qilish, balki mijozlarimizga eng ilg'or mahsulotlarga kirishni ta'minlash orqali ularni o'rnatishdir.",
     "2": "Biz har bir inson tibbiyot sohasida eng yuqori darajadagi g'amxo'rlik va xavfsizlikka loyiq ekanligiga ishonamiz. Bizning vazifamiz yuqori sifatli mahsulotlarning keng assortimentini taklif qilish va ajoyib xizmat ko'rsatish orqali tibbiy amaliyotni yanada samarali, xavfsiz va arzonroq qilishdir.",
     "3": "Biz mijozlarimizni qadrlaymiz va ishonch va o'zaro hurmat asosida uzoq muddatli sheriklik aloqalarini o'rnatishga intilamiz.",
     "4": "Qattiq sifat nazorati",
@@ -100,7 +100,7 @@
     "10": "Mahsulotlarning keng assortimenti" ,
     "11": "Biz klinikalar va shifoxonalarga bitta ishonchli yetkazib beruvchidan kerakli narsalarni olish imkoniyatini beradigan turli xil tibbiy sarf materiallarini taklif etamiz.",
     "12": "Tez va ishonchli yetkazib berish",
-    "13": "Medicare MCHJ mahsulotlarni tezkor yetkazib berishni ta'minlaydi, kutish vaqtini qisqartiradi va muhim tibbiy sarf materiallarining doimiy mavjudligini ta'minlaydi.",
+    "13": "Medicare mahsulotlarni tezkor yetkazib berishni ta'minlaydi, kutish vaqtini qisqartiradi va muhim tibbiy sarf materiallarining doimiy mavjudligini ta'minlaydi.",
     "14": "Bizning sertifikatlarimiz"
   },
   "Payment" : {
