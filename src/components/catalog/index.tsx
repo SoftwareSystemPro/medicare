@@ -7,12 +7,18 @@ import { GET_CATEGORIES } from "src/services/category.query"
 import { CategoryType } from "src/interface/category.type"
 import { useRouter } from "next/router"
 import { ChangeEvent } from "react"
+import { GET_PRODUCTCARD } from "src/services/product.query"
+import { CardProductType } from "src/interface/card.type"
 
 const CatalogComponent = () => {
   const router = useRouter();
   const { locale } = useRouter();
   const { loading, error, data } = useQuery(GET_CATEGORIES);
-
+  const {query} = useRouter();
+  const {loading:CatalogLoading , error:CatalogError , data:CatalogData} = useQuery(GET_PRODUCTCARD,{
+    variables:{categorySlug:query.catalog}
+  })
+  
   const HandleChangeCategory = (e: ChangeEvent<HTMLSelectElement>) => {
     router.push(`/catalog/${e.currentTarget.value}`);
   };
@@ -36,7 +42,13 @@ const CatalogComponent = () => {
             ))}
           </select>
         </div>
-        <h2>Перчатки нестерильные</h2>
+        <h2>{CatalogData?.products?.map((elem:CardProductType, index:number) =>                 locale == "ru"
+                  ? elem.category.categoryRu
+                  : locale == "en"
+                  ? elem.category.categoryEn
+                  : locale == "uz"
+                  ? elem.category.categoryUz
+                  : elem.category.categoryRu)[0]}</h2>
         <div className={styles.catalog}>
           <CatalogFilter />
           <CatalogProducts />
